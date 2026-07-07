@@ -215,6 +215,15 @@ button:disabled { opacity: 0.35; cursor: not-allowed; }
   border-color: var(--accent);
   background: var(--accent-soft);
 }
+.option.correct-opt {
+  border-color: var(--good);
+  background: var(--good-soft);
+}
+.option.wrong-opt {
+  border-color: var(--bad);
+  background: #fdeceb;
+}
+.option { justify-content: space-between; }
 .option input { margin: 0; accent-color: var(--accent); width: 17px; height: 17px; flex: none; }
 .option span { font-size: 1rem; }
 

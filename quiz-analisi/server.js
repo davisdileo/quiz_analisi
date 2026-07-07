@@ -17,23 +17,59 @@ const QUESTIONS_FILE = path.join(DATA_DIR, "questions.json");
 
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
 
+// ---------- Banca dati (350 domande, 50 per ciascuno dei 7 capitoli) ----------
 const QUESTIONS = JSON.parse(fs.readFileSync(QUESTIONS_FILE, "utf-8"));
-const TOTAL_QUESTIONS = QUESTIONS.length;
 
-const PUBLIC_QUESTIONS = QUESTIONS.map((q) => ({
-  id: q.id,
-  topic: q.topic,
-  text: q.text,
-  options: q.options,
-  image: q.image || null,
-}));
+const QUESTIONS_BY_ID = new Map(QUESTIONS.map((q) => [q.id, q]));
+const QUESTIONS_BY_CHAPTER = {};
+for (const q of QUESTIONS) {
+  (QUESTIONS_BY_CHAPTER[q.chapter] = QUESTIONS_BY_CHAPTER[q.chapter] || []).push(q.id);
+}
+
+// Composizione del quiz personalizzato: 6 domande da ciascuno dei capitoli
+// 2,3,5,6,7 (Numeri complessi, Funzioni reali, Funzioni continue, Calcolo
+// differenziale, Calcolo integrale) + 5 domande da ciascuno dei capitoli
+// 1 e 4 (Numeri reali, Limiti) = 40 domande totali per studente.
+const CHAPTER_GROUP_A = [2, 3, 5, 6, 7]; // 6 domande ciascuno
+const CHAPTER_GROUP_B = [1, 4]; // 5 domande ciascuno
+const PERSONALIZED_TOTAL = CHAPTER_GROUP_A.length * 6 + CHAPTER_GROUP_B.length * 5;
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = crypto.randomInt(0, i + 1);
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function assignQuiz() {
+  let ids = [];
+  for (const ch of CHAPTER_GROUP_A) {
+    ids = ids.concat(shuffle(QUESTIONS_BY_CHAPTER[ch] || []).slice(0, 6));
+  }
+  for (const ch of CHAPTER_GROUP_B) {
+    ids = ids.concat(shuffle(QUESTIONS_BY_CHAPTER[ch] || []).slice(0, 5));
+  }
+  return shuffle(ids);
+}
+
+function publicQuestion(q) {
+  return {
+    id: q.id,
+    topic: q.topic,
+    text: q.text,
+    options: q.options,
+    image: q.image || null,
+  };
+}
 
 // ---------- State ----------
 let state = {
   quizStarted: false,
   quizStartedAt: null,
   quizStopped: false,
-  students: {}, // code -> {code,name,status,currentQuestion,answers,correctCount,voto,lode,startedAt,completedAt}
+  students: {}, // code -> {code,name,status,currentQuestion,answers,assignedQuestions,correctCount,voto,lode,startedAt,completedAt}
 };
 
 function loadState() {
@@ -64,10 +100,19 @@ function generateCode() {
   return code;
 }
 
-function computeVoto(correctCount) {
-  const raw = (correctCount / TOTAL_QUESTIONS) * 30;
+function ensureAssignedQuestions(student) {
+  // Compatibilità: se lo studente non ha ancora un quiz assegnato (codici
+  // creati prima di questa funzionalità), lo assegna ora.
+  if (!student.assignedQuestions || !student.assignedQuestions.length) {
+    student.assignedQuestions = assignQuiz();
+  }
+  return student.assignedQuestions;
+}
+
+function computeVoto(correctCount, total) {
+  const raw = (correctCount / total) * 30;
   const voto = Math.min(Math.round(raw), 30);
-  const lode = correctCount === TOTAL_QUESTIONS;
+  const lode = correctCount === total;
   return { voto, lode };
 }
 
@@ -76,7 +121,7 @@ function adminSummary() {
     quizStarted: state.quizStarted,
     quizStartedAt: state.quizStartedAt,
     quizStopped: state.quizStopped,
-    totalQuestions: TOTAL_QUESTIONS,
+    totalQuestions: PERSONALIZED_TOTAL,
     students: Object.values(state.students)
       .map((s) => ({
         code: s.code,
@@ -84,6 +129,7 @@ function adminSummary() {
         status: s.status,
         currentQuestion: s.currentQuestion,
         answered: Object.keys(s.answers || {}).length,
+        total: (s.assignedQuestions && s.assignedQuestions.length) || PERSONALIZED_TOTAL,
         correctCount: s.correctCount,
         voto: s.voto,
         lode: s.lode,
@@ -186,6 +232,7 @@ const server = http.createServer(async (req, res) => {
           status: "not_registered",
           currentQuestion: 0,
           answers: {},
+          assignedQuestions: assignQuiz(),
           correctCount: null,
           voto: null,
           lode: false,
@@ -221,6 +268,40 @@ const server = http.createServer(async (req, res) => {
       return sendJSON(res, 200, { ok: true });
     }
 
+    // Revisione del quiz svolto da uno studente (solo admin)
+    if (pathname === "/api/admin/student-review" && req.method === "GET") {
+      if (!isAdmin(req)) return sendJSON(res, 401, { error: "Password amministratore non valida." });
+      const c = (parsed.query.code || "").toString().trim().toUpperCase();
+      const student = state.students[c];
+      if (!student) return sendJSON(res, 404, { error: "Codice non valido." });
+      const ids = ensureAssignedQuestions(student);
+      const questions = ids.map((id) => {
+        const q = QUESTIONS_BY_ID.get(id);
+        const studentIndex = student.answers ? student.answers[id] : undefined;
+        return {
+          id: q.id,
+          topic: q.topic,
+          text: q.text,
+          options: q.options,
+          image: q.image || null,
+          correctIndex: q.correct,
+          studentIndex: studentIndex === undefined ? null : studentIndex,
+          isCorrect: studentIndex !== undefined && studentIndex === q.correct,
+          answered: studentIndex !== undefined,
+        };
+      });
+      return sendJSON(res, 200, {
+        code: student.code,
+        name: student.name,
+        status: student.status,
+        correctCount: student.correctCount,
+        total: ids.length,
+        voto: student.voto,
+        lode: student.lode,
+        questions,
+      });
+    }
+
     // ----- Student API -----
     if (pathname === "/api/student/login" && req.method === "POST") {
       const body = await readBody(req);
@@ -229,6 +310,7 @@ const server = http.createServer(async (req, res) => {
       if (!student) return sendJSON(res, 404, { error: "Codice non valido. Controlla e riprova." });
       if (!student.name && body.name && body.name.trim()) student.name = body.name.trim();
       if (student.status === "not_registered") student.status = "waiting";
+      const ids = ensureAssignedQuestions(student);
       saveState();
       return sendJSON(res, 200, {
         code: student.code,
@@ -237,7 +319,7 @@ const server = http.createServer(async (req, res) => {
         quizStarted: state.quizStarted,
         quizStopped: state.quizStopped,
         currentQuestion: student.currentQuestion,
-        totalQuestions: TOTAL_QUESTIONS,
+        totalQuestions: ids.length,
         voto: student.voto,
         lode: student.lode,
         correctCount: student.correctCount,
@@ -263,7 +345,9 @@ const server = http.createServer(async (req, res) => {
       const student = state.students[c];
       if (!student) return sendJSON(res, 404, { error: "Codice non valido." });
       if (!state.quizStarted) return sendJSON(res, 403, { error: "Il quiz non è ancora iniziato." });
-      return sendJSON(res, 200, { questions: PUBLIC_QUESTIONS, answers: student.answers || {} });
+      const ids = ensureAssignedQuestions(student);
+      const questions = ids.map((id) => publicQuestion(QUESTIONS_BY_ID.get(id)));
+      return sendJSON(res, 200, { questions, answers: student.answers || {} });
     }
 
     if (pathname === "/api/student/answer" && req.method === "POST") {
@@ -273,6 +357,8 @@ const server = http.createServer(async (req, res) => {
       if (!student) return sendJSON(res, 404, { error: "Codice non valido." });
       if (!state.quizStarted || state.quizStopped) return sendJSON(res, 403, { error: "Il quiz non è attivo." });
       if (student.status === "completed") return sendJSON(res, 403, { error: "Hai già completato il quiz." });
+      const ids = ensureAssignedQuestions(student);
+      if (!ids.includes(body.questionId)) return sendJSON(res, 400, { error: "Domanda non valida per questo quiz." });
       if (student.status === "waiting") {
         student.status = "in_progress";
         student.startedAt = new Date().toISOString();
@@ -288,27 +374,29 @@ const server = http.createServer(async (req, res) => {
       const c = (body.code || "").trim().toUpperCase();
       const student = state.students[c];
       if (!student) return sendJSON(res, 404, { error: "Codice non valido." });
+      const ids = ensureAssignedQuestions(student);
       if (student.status === "completed") {
         return sendJSON(res, 200, {
           correctCount: student.correctCount,
-          total: TOTAL_QUESTIONS,
+          total: ids.length,
           voto: student.voto,
           lode: student.lode,
         });
       }
       let correctCount = 0;
-      QUESTIONS.forEach((q) => {
-        const given = student.answers[q.id];
+      ids.forEach((id) => {
+        const q = QUESTIONS_BY_ID.get(id);
+        const given = student.answers[id];
         if (given !== undefined && given === q.correct) correctCount++;
       });
-      const { voto, lode } = computeVoto(correctCount);
+      const { voto, lode } = computeVoto(correctCount, ids.length);
       student.correctCount = correctCount;
       student.voto = voto;
       student.lode = lode;
       student.status = "completed";
       student.completedAt = new Date().toISOString();
       saveState();
-      return sendJSON(res, 200, { correctCount, total: TOTAL_QUESTIONS, voto, lode });
+      return sendJSON(res, 200, { correctCount, total: ids.length, voto, lode });
     }
 
     // ----- Static files -----
@@ -326,4 +414,5 @@ const server = http.createServer(async (req, res) => {
 server.listen(PORT, () => {
   console.log(`Quiz Analisi Matematica in ascolto sulla porta ${PORT}`);
   console.log(`Password admin: ${ADMIN_PASSWORD}`);
+  console.log(`Banca dati: ${QUESTIONS.length} domande, quiz personalizzato da ${PERSONALIZED_TOTAL} domande.`);
 });

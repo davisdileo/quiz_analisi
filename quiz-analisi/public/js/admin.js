@@ -12,6 +12,18 @@ function api(path, opts = {}) {
   return fetch(path, opts);
 }
 
+function renderMath() {
+  if (window.renderMathInElement) {
+    renderMathInElement(app, {
+      delimiters: [
+        { left: "\\[", right: "\\]", display: true },
+        { left: "\\(", right: "\\)", display: false },
+      ],
+      throwOnError: false,
+    });
+  }
+}
+
 function renderLogin(errorMsg) {
   app.innerHTML = `
     <div class="card" style="max-width:420px;margin:0 auto;">
@@ -79,7 +91,7 @@ function renderDashboard() {
       <div class="stats-row" id="statsRow"></div>
       <table>
         <thead>
-          <tr><th>Codice</th><th>Nome</th><th>Stato</th><th>Progresso</th><th>Voto</th></tr>
+          <tr><th>Codice</th><th>Nome</th><th>Stato</th><th>Progresso</th><th>Voto</th><th></th></tr>
         </thead>
         <tbody id="studentsBody"></tbody>
       </table>
@@ -168,13 +180,81 @@ function renderState(data) {
         <td>${s.code}</td>
         <td>${s.name || "<span class='muted'>—</span>"}</td>
         <td><span class="badge ${s.status}">${statusLabel(s.status)}</span></td>
-        <td>${s.answered}/${data.totalQuestions}</td>
+        <td>${s.answered}/${s.total || data.totalQuestions}</td>
         <td>${s.voto !== null && s.voto !== undefined ? (s.lode ? "30 e lode" : s.voto + "/30") : "—"}</td>
+        <td><button class="secondary" style="margin:0;padding:6px 12px;font-size:0.82rem;" data-code="${s.code}">Vedi quiz</button></td>
       </tr>
     `
       )
       .join("");
+    tbody.querySelectorAll("button[data-code]").forEach((btn) => {
+      btn.onclick = () => renderReview(btn.dataset.code);
+    });
   }
+}
+
+function optionLabel(q, i) {
+  const isCorrectOpt = i === q.correctIndex;
+  const isStudentOpt = i === q.studentIndex;
+  let cls = "option";
+  let tag = "";
+  if (isCorrectOpt) {
+    cls += " correct-opt";
+    tag = " &nbsp;<span class='badge completed'>corretta</span>";
+  }
+  if (isStudentOpt && !isCorrectOpt) {
+    cls += " wrong-opt";
+    tag = " &nbsp;<span class='badge not_registered' style='background:#fde2e1;color:#c0392b;'>risposta data</span>";
+  }
+  if (isStudentOpt && isCorrectOpt) {
+    tag = " &nbsp;<span class='badge completed'>risposta corretta</span>";
+  }
+  return `<div class="${cls}"><span>${q.options[i]}</span>${tag}</div>`;
+}
+
+async function renderReview(code) {
+  clearInterval(pollTimer);
+  app.innerHTML = `<div class="card"><p class="muted">Caricamento...</p></div>`;
+  const res = await api("/api/admin/student-review?code=" + encodeURIComponent(code));
+  if (res.status === 401) return renderLogin();
+  const data = await res.json();
+  if (!res.ok) {
+    app.innerHTML = `<div class="card"><p class="error">${data.error || "Errore."}</p></div>`;
+    return;
+  }
+
+  const scoreLine =
+    data.voto !== null && data.voto !== undefined
+      ? `${data.lode ? "30 e lode" : data.voto + "/30"} &middot; ${data.correctCount}/${data.total} corrette`
+      : "Quiz non ancora completato";
+
+  const questionsHtml = data.questions
+    .map(
+      (q, i) => `
+    <div class="card" style="margin-top:16px;">
+      <div class="q-topic">${q.topic}</div>
+      <div class="q-counter" style="text-align:left;margin-bottom:6px;">Domanda ${i + 1} di ${data.questions.length}${q.answered ? "" : " &middot; <strong>non risposto</strong>"}</div>
+      <div class="q-text">${q.text}</div>
+      ${q.image ? `<img class="q-image" src="/images/${q.image}" alt="grafico" />` : ""}
+      ${q.options.map((_, oi) => optionLabel(q, oi)).join("")}
+    </div>
+  `
+    )
+    .join("");
+
+  app.innerHTML = `
+    <div class="card">
+      <button class="secondary" id="backBtn">&larr; Torna alla dashboard</button>
+      <h2 style="margin-top:16px;">${data.name || "Studente"} <span class="muted">(${data.code})</span></h2>
+      <p class="muted">${scoreLine}</p>
+    </div>
+    ${questionsHtml}
+  `;
+  document.getElementById("backBtn").onclick = () => {
+    renderDashboard();
+    startPolling();
+  };
+  renderMath();
 }
 
 async function refreshState() {
