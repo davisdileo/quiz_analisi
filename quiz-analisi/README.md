@@ -2,7 +2,7 @@
 
 Web app per l'esercitazione: ogni studente accede con un codice univoco e
 riceve un quiz personalizzato (40 domande, pescate casualmente da una banca
-dati di 350), il docente avvia il quiz e ne segue l'avanzamento in tempo
+dati di 404, modellata sulle tracce d'esame reali del docente), il docente avvia il quiz e ne segue l'avanzamento in tempo
 reale, può rivedere in ogni momento le domande e le risposte di ciascuno
 studente, e al termine ogni studente vede il proprio punteggio e il voto in
 trentesimi. Funziona anche in modalità asincrona: una volta avviato il
@@ -56,13 +56,67 @@ disco in `data/state.json`, quindi sopravvive a un riavvio del server.
 
 ## Le domande e il quiz personalizzato
 
-`data/questions.json` contiene una banca dati di **350 domande** (50 per
-ciascuno dei 7 capitoli del programma), a livello di esame universitario
-di Ingegneria (teoremi applicati, studi di funzione completi, limiti con
-Taylor/de l'Hôpital, radici complesse, integrali per parti/sostituzione,
-ecc.), generate e verificate simbolicamente con sympy (ogni risultato è
-ricalcolato dal programma, non scritto a mano) più un nucleo di domande
-curate manualmente con grafici da interpretare.
+`data/questions.json` contiene una banca dati di **404 domande** (almeno 50
+per ciascuno dei 7 capitoli del programma, alcuni ne hanno di più).
+
+Il nucleo principale delle domande è stato **modellato direttamente sulle
+tracce d'esame reali del docente** (8 compiti di "Esonero di Analisi
+Matematica, Corso E" forniti come esempio): ogni traccia segue sempre lo
+stesso schema — disequazione esponenziale/logaritmica + semplificazione
+trigonometrica inversa + radici n-esime di un numero complesso; teoria +
+enunciato di un teorema + studio di funzione (immagine/monotonia/
+asintoti); teoria + integrale; enunciato e dimostrazione di un teorema. Per
+riprodurre fedelmente questo stile sono stati scritti generatori dedicati
+(cartella `bank/`, prefisso `exam_`), ciascuno verificato con sympy o per
+via numerica:
+
+- `exam_algebra.py` — disequazioni esponenziali/logaritmiche a base
+  comune, con base variabile (\(\log_x(\cdot)\)), stesso schema delle
+  tracce (es. \(\log_{1/\pi}(2x^2-4)\ge\log_{1/\pi}(9-3x)\)).
+- `exam_trig_inverse.py` — semplificazioni tipo \(\sin(\arctan(-1/3))\),
+  \(\arctan(\tan(2\pi/3))\), calcolate e verificate numericamente.
+- `exam_complex_roots.py` — equazioni \(z^n=w\) e "radici n-esime di ..."
+  esattamente nello stile delle tracce (es. \(z^5=9i\), radici quinte di
+  \(-8\)).
+- `exam_function_study.py` — le quattro famiglie di "studio di funzione"
+  viste nelle tracce: \(|x^2-x-2|\) (immagine/estremi assoluti),
+  \((x-1)^{1/3}-(x+1)^{1/3}\) (monotonia), \(|x|e^{1/(x-1)}\) (asintoti),
+  \(\ln(|\ln x|)-2\ln^2(|x|)\) (asintoti/immagine/massimo assoluto) — con
+  formula chiusa generica ricavata e verificata per ciascuna famiglia.
+- `exam_integrali.py` — gli stessi tipi di integrale delle tracce
+  (\(\int x^3/\sqrt{9+x^2}\,dx\), \(\int\cos(\ln x)\,dx\),
+  \(\int x^2/(\sqrt{x}(x+1))\,dx\), \(\int(\tan^4x-4)/(\tan x+\sqrt2)\,dx\),
+  \(\int(x+1)/\sqrt{x^2+6x+10}\,dx\), \(\int 1/\sin^2x\,dx\),
+  \(\int(x^2+x)/(3-2x+x^2)\,dx\)), con primitiva verificata derivandola
+  numericamente e confrontandola con l'integranda.
+- `exam_teoremi.py` — enunciato/ipotesi/dimostrazione dei teoremi
+  richiesti nelle tracce: Weierstrass, de l'Hôpital, media integrale,
+  Teorema degli zeri (e relazione con Bolzano), Fermat (con la catena di
+  implicazioni "f derivabile n volte ⇒ f^(n-2) continua ⇒ f continua"),
+  Lagrange, unicità del limite, Teorema Fondamentale del Calcolo, criteri
+  di monotonia/convessità.
+
+Le domande "generiche" già presenti (`ch1_reali.py` ... `ch7_integrale.py`,
+`extra_from_slides.py`, `ch4_successioni.py`, a livello di esame
+universitario di Ingegneria, generate e verificate simbolicamente con
+sympy) restano nella banca dati ma solo come **riempimento**: vengono
+usate esclusivamente nei capitoli dove il materiale stile-esame da solo
+non basta a raggiungere 50 domande. Resta incluso anche un nucleo di
+domande curate manualmente con grafici da interpretare.
+
+Il conteggio per capitolo (`curate` = con grafici, `stile-esame` = dalle
+tracce del docente, `riempimento` = generatori generici):
+
+| Capitolo | Totale | curate | stile-esame | riempimento |
+|---|---|---|---|---|
+| 1. Numeri reali | 50 | 4 | 36 | 10 |
+| 2. Numeri complessi | 62 | 4 | 58 | 0 |
+| 3. Funzioni reali | 58 | 4 | 54 | 0 |
+| 4. Limiti | 50 | 8 | 15 | 27 |
+| 5. Funzioni continue | 50 | 4 | 10 | 36 |
+| 6. Calcolo differenziale | 64 | 17 | 47 | 0 |
+| 7. Calcolo integrale | 70 | 9 | 61 | 0 |
+| **Totale** | **404** | | | |
 
 Quando generi un codice, il server compone automaticamente un quiz da 40
 domande pescandole così dalla banca dati:
@@ -93,10 +147,13 @@ Puoi modificare testo, opzioni o immagini direttamente in
 dell'opzione corretta nell'array `options`, il campo `chapter` è il numero
 1-7 del capitolo); non serve rigenerare nulla, basta salvare il file e
 riavviare il server. La cartella `bank/` contiene gli script Python usati
-per generare le domande (non necessari all'esecuzione dell'app): uno per
-capitolo (`ch1_reali.py` ... `ch7_integrale.py`) più `build_bank.py` che li
-combina nel file finale — utili come riferimento se vuoi aggiungerne altre
-nello stesso stile.
+per generare le domande (non necessari all'esecuzione dell'app): i
+generatori `exam_*.py` (stile-esame, prioritari), quelli per capitolo
+(`ch1_reali.py` ... `ch7_integrale.py`, usati come riempimento),
+`ch4_successioni.py` ed `extra_from_slides.py` per gli argomenti aggiunti
+dalle slide del corso, più `build_bank.py` che li combina tutti nel file
+finale — utili come riferimento se vuoi aggiungerne altre nello stesso
+stile.
 
 ## Distribuire l'app online oggi stesso
 
