@@ -29,6 +29,11 @@ import exam_complex_roots
 import exam_function_study
 import exam_integrali
 import exam_teoremi
+import exam_true_false2
+import exam_complex_advanced
+import exam_domains
+import exam_integrali3
+import exam_function_study2
 
 HERE = os.path.dirname(__file__)
 OLD_QUESTIONS = os.path.join(HERE, "..", "data", "questions_old_50.json")
@@ -120,6 +125,32 @@ def load_exam_style_by_chapter():
     for it in teoremi:
         rng = random.Random(11020 + it["chapter"])
         by_chapter[it["chapter"]].append(to_option_format(it, rng))
+
+    # --- nuove famiglie dalle 7 tracce d'esame caricate successivamente ---
+    tf2 = exam_true_false2.build_tagged()
+    for it in tf2:
+        rng = random.Random(11030 + it["chapter"])
+        by_chapter[it["chapter"]].append(to_option_format(it, rng))
+
+    rng_ca = random.Random(11040)
+    for it in exam_complex_advanced.build():
+        by_chapter[2].append(to_option_format(it, rng_ca))
+
+    domains = exam_domains.build_by_chapter()
+    for ch, items in domains.items():
+        rng = random.Random(11050 + ch)
+        for it in items:
+            by_chapter[ch].append(to_option_format(it, rng))
+
+    rng_i3 = random.Random(11060)
+    for it in exam_integrali3.build():
+        by_chapter[7].append(to_option_format(it, rng_i3))
+
+    fstudy2 = exam_function_study2.build_by_chapter()
+    for ch, items in fstudy2.items():
+        rng = random.Random(11070 + ch)
+        for it in items:
+            by_chapter[ch].append(to_option_format(it, rng))
 
     return by_chapter
 

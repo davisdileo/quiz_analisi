@@ -2,7 +2,10 @@
 
 Web app per l'esercitazione: ogni studente accede con un codice univoco e
 riceve un quiz personalizzato (40 domande, pescate casualmente da una banca
-dati di 404, modellata sulle tracce d'esame reali del docente), il docente avvia il quiz e ne segue l'avanzamento in tempo
+dati di 604, modellata sulle tracce d'esame reali del docente — incluse le
+tracce con equazioni in \(\mathbb{C}\) avanzate, insiemi di definizione con
+proprietà topologiche, nuovi integrali e studi di funzione logaritmica/
+esponenziale), il docente avvia il quiz e ne segue l'avanzamento in tempo
 reale, può rivedere in ogni momento le domande e le risposte di ciascuno
 studente, e al termine ogni studente vede il proprio punteggio e il voto in
 trentesimi. Funziona anche in modalità asincrona: una volta avviato il

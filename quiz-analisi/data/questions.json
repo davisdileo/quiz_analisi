@@ -5263,5 +5263,2605 @@
       "\\(\\frac{\\left(x^{2} - 10\\right) \\sqrt{x^{2} + 5}}{3} + C\\)"
     ],
     "correct": 3
+  },
+  {
+    "id": 405,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Il dominio \\(D\\) trovato al punto precedente coincide con \\(\\mathbb{R}\\) poiché \\(t^2-t+8>0\\ \\forall t\\in\\mathbb{R}\\) (discriminante negativo, con \\(t=e^x\\)). Quale affermazione su \\(D=\\mathbb{R}\\) è corretta?",
+    "options": [
+      "\\(D=\\mathbb{R}\\) è sia aperto che chiuso (insieme chiuso-aperto), illimitato, quindi non compatto, e ha frontiera \\(\\operatorname{Fr}D=\\emptyset\\)",
+      "\\(D=\\mathbb{R}\\) è compatto poiché è chiuso",
+      "\\(D=\\mathbb{R}\\) è limitato",
+      "\\(D=\\mathbb{R}\\) è aperto ma non chiuso"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 406,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Il dominio \\(D\\) trovato al punto precedente coincide con \\(\\mathbb{R}\\) poiché \\(t^2-t+5>0\\ \\forall t\\in\\mathbb{R}\\) (discriminante negativo, con \\(t=e^x\\)). Quale affermazione su \\(D=\\mathbb{R}\\) è corretta?",
+    "options": [
+      "\\(D=\\mathbb{R}\\) è sia aperto che chiuso (insieme chiuso-aperto), illimitato, quindi non compatto, e ha frontiera \\(\\operatorname{Fr}D=\\emptyset\\)",
+      "\\(D=\\mathbb{R}\\) è aperto ma non chiuso",
+      "\\(D=\\mathbb{R}\\) è compatto poiché è chiuso",
+      "\\(D=\\mathbb{R}\\) è limitato"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 407,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "L'affermazione \\(1\\in D_r\\mathbb{N}\\) (1 è punto di accumulazione di \\(\\mathbb{N}\\)) è:",
+    "options": [
+      "Falsa: \\(\\mathbb{N}\\) è un insieme discreto, ogni suo punto è isolato: nessun intorno di 1 privato di 1 contiene altri naturali",
+      "Falsa: \\(\\mathbb{N}\\) non ha alcun punto di accumulazione, nemmeno in \\(\\mathbb{R}\\)",
+      "Vera: ogni sottoinsieme infinito di \\(\\mathbb{R}\\) ha punti di accumulazione al suo interno",
+      "Vera: 1 è il primo elemento di \\(\\mathbb{N}\\), quindi è di accumulazione"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 408,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "L'insieme \\(D=\\mathbb{R}\\setminus\\{p_1,p_2,p_3,p_4\\}\\) (complementare di un insieme finito di punti) trovato al punto precedente: quale affermazione e' corretta?",
+    "options": [
+      "\\(D\\) è aperto (unione di intervalli aperti) ma non è un intervallo; è illimitato, non è chiuso e quindi non è compatto; l'insieme dei punti di accumulazione è \\(D_r D=\\mathbb{R}\\) (include anche i 4 punti esclusi)",
+      "\\(D\\) è compatto poiché è unione finita di intervalli",
+      "\\(D\\) è un intervallo illimitato",
+      "\\(D\\) è chiuso poiché il complementare di un insieme finito è sempre chiuso"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 409,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "L'intervallo \\(D=\\left(e^{-2},\\ e^{2}\\right)\\) trovato al punto precedente: quale affermazione è corretta?",
+    "options": [
+      "\\(D\\) è compatto poiché è limitato",
+      "\\(D\\) è chiuso e limitato, quindi compatto",
+      "\\(D\\) ammette massimo \\(e^{2}\\) e minimo \\(e^{-2}\\)",
+      "\\(D\\) è un intervallo aperto e limitato, ma non è chiuso: non è compatto, non ammette né massimo né minimo, e \\(\\operatorname{Fr}D=\\{e^{-2},e^{2}\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 410,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Il dominio \\(D\\) trovato al punto precedente coincide con \\(\\mathbb{R}\\) poiché \\(t^2-t+1>0\\ \\forall t\\in\\mathbb{R}\\) (discriminante negativo, con \\(t=e^x\\)). Quale affermazione su \\(D=\\mathbb{R}\\) è corretta?",
+    "options": [
+      "\\(D=\\mathbb{R}\\) è compatto poiché è chiuso",
+      "\\(D=\\mathbb{R}\\) è limitato",
+      "\\(D=\\mathbb{R}\\) è sia aperto che chiuso (insieme chiuso-aperto), illimitato, quindi non compatto, e ha frontiera \\(\\operatorname{Fr}D=\\emptyset\\)",
+      "\\(D=\\mathbb{R}\\) è aperto ma non chiuso"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 411,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Sia \\(D=\\left(-1,\\ - \\frac{2}{3}\\right]\\) l'insieme di definizione trovato al punto precedente (con \\(-1<- \\frac{2}{3}\\)). Quale affermazione e' corretta?",
+    "options": [
+      "\\(D\\) è chiuso e limitato, quindi compatto per il teorema di Heine-Borel",
+      "\\(D\\) è illimitato superiormente, quindi non ammette massimo",
+      "\\(D\\) è limitato e ammette massimo (\\(\\max D=- \\frac{2}{3}\\)), ma non ammette minimo (\\(\\inf D=-1\\) non è un punto di \\(D\\)); \\(D\\) non è né aperto né chiuso, quindi non è compatto",
+      "\\(D\\) è aperto, quindi non ammette né massimo né minimo"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 412,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "L'intervallo \\(D=\\left(e^{-1},\\ e^{1}\\right)\\) trovato al punto precedente: quale affermazione è corretta?",
+    "options": [
+      "\\(D\\) è un intervallo aperto e limitato, ma non è chiuso: non è compatto, non ammette né massimo né minimo, e \\(\\operatorname{Fr}D=\\{e^{-1},e^{1}\\}\\)",
+      "\\(D\\) è compatto poiché è limitato",
+      "\\(D\\) è chiuso e limitato, quindi compatto",
+      "\\(D\\) ammette massimo \\(e^{1}\\) e minimo \\(e^{-1}\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 413,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Sia \\(p(x)=-\\pi x^9-2x^3\\). L'affermazione \\\"p ammette uno e un solo zero reale\\\" è:",
+    "options": [
+      "Vera: \\(p(x)=-x^3(\\pi x^6+2)\\), il fattore \\(\\pi x^6+2>0\\) sempre, quindi l'unico zero è \\(x=0\\) (e p è strettamente decrescente)",
+      "Vera, ma per un motivo diverso: p è pari",
+      "Falsa: p non si annulla mai",
+      "Falsa: p è un polinomio di grado 9, quindi ha 9 zeri reali distinti"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 414,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Sia \\(D=\\left(- \\frac{1}{2},\\ 0\\right]\\) l'insieme di definizione trovato al punto precedente (con \\(- \\frac{1}{2}<0\\)). Quale affermazione e' corretta?",
+    "options": [
+      "\\(D\\) è limitato e ammette massimo (\\(\\max D=0\\)), ma non ammette minimo (\\(\\inf D=- \\frac{1}{2}\\) non è un punto di \\(D\\)); \\(D\\) non è né aperto né chiuso, quindi non è compatto",
+      "\\(D\\) è illimitato superiormente, quindi non ammette massimo",
+      "\\(D\\) è aperto, quindi non ammette né massimo né minimo",
+      "\\(D\\) è chiuso e limitato, quindi compatto per il teorema di Heine-Borel"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 415,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Sia X l\\'insieme di definizione di \\(g(x)=\\dfrac{1}{(x+1)^2(\\log|x|+1)^3}\\). L\\'affermazione \"\\(\\operatorname{Fr}X=\\emptyset\\)\" (frontiera di X) è:",
+    "options": [
+      "Falsa: X = \\(\\mathbb{R}\\setminus\\{-1,0,1/e,-1/e\\}\\) è aperto ma non chiuso; la sua frontiera è proprio l'insieme dei 4 punti esclusi, non vuota",
+      "Falsa: X non ammette punti esclusi dal dominio",
+      "Vera: X coincide con tutto \\(\\mathbb{R}\\)",
+      "Vera: X è un aperto, e la frontiera di un aperto è sempre vuota"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 416,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Sia \\(D=\\left(- \\frac{4}{3},\\ -1\\right]\\) l'insieme di definizione trovato al punto precedente (con \\(- \\frac{4}{3}<-1\\)). Quale affermazione e' corretta?",
+    "options": [
+      "\\(D\\) è chiuso e limitato, quindi compatto per il teorema di Heine-Borel",
+      "\\(D\\) è illimitato superiormente, quindi non ammette massimo",
+      "\\(D\\) è aperto, quindi non ammette né massimo né minimo",
+      "\\(D\\) è limitato e ammette massimo (\\(\\max D=-1\\)), ma non ammette minimo (\\(\\inf D=- \\frac{4}{3}\\) non è un punto di \\(D\\)); \\(D\\) non è né aperto né chiuso, quindi non è compatto"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 417,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "L'intervallo \\(D=\\left[e^{-1},\\ e^{1}\\right]\\) trovato al punto precedente: quale affermazione è corretta?",
+    "options": [
+      "\\(D\\) è limitato ma non chiuso, quindi non compatto",
+      "\\(D\\) è aperto, quindi non compatto",
+      "\\(D\\) è chiuso e limitato, quindi compatto per il teorema di Heine-Borel; ammette massimo \\(e^{1}\\) e minimo \\(e^{-1}\\), e \\(\\operatorname{Fr}D=\\{e^{-1},e^{1}\\}\\subset D\\)",
+      "\\(D\\) non ammette né massimo né minimo poiché è un intervallo"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 418,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Sia \\(D=\\left(3,\\ 4\\right]\\) l'insieme di definizione trovato al punto precedente (con \\(3<4\\)). Quale affermazione e' corretta?",
+    "options": [
+      "\\(D\\) è limitato e ammette massimo (\\(\\max D=4\\)), ma non ammette minimo (\\(\\inf D=3\\) non è un punto di \\(D\\)); \\(D\\) non è né aperto né chiuso, quindi non è compatto",
+      "\\(D\\) è aperto, quindi non ammette né massimo né minimo",
+      "\\(D\\) è chiuso e limitato, quindi compatto per il teorema di Heine-Borel",
+      "\\(D\\) è illimitato superiormente, quindi non ammette massimo"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 419,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Sia \\(D=\\left(-4,\\ -3\\right]\\) l'insieme di definizione trovato al punto precedente (con \\(-4<-3\\)). Quale affermazione e' corretta?",
+    "options": [
+      "\\(D\\) è limitato e ammette massimo (\\(\\max D=-3\\)), ma non ammette minimo (\\(\\inf D=-4\\) non è un punto di \\(D\\)); \\(D\\) non è né aperto né chiuso, quindi non è compatto",
+      "\\(D\\) è illimitato superiormente, quindi non ammette massimo",
+      "\\(D\\) è chiuso e limitato, quindi compatto per il teorema di Heine-Borel",
+      "\\(D\\) è aperto, quindi non ammette né massimo né minimo"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 420,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "L'intervallo \\(D=\\left[e^{-2},\\ e^{2}\\right]\\) trovato al punto precedente: quale affermazione è corretta?",
+    "options": [
+      "\\(D\\) è chiuso e limitato, quindi compatto per il teorema di Heine-Borel; ammette massimo \\(e^{2}\\) e minimo \\(e^{-2}\\), e \\(\\operatorname{Fr}D=\\{e^{-2},e^{2}\\}\\subset D\\)",
+      "\\(D\\) non ammette né massimo né minimo poiché è un intervallo",
+      "\\(D\\) è limitato ma non chiuso, quindi non compatto",
+      "\\(D\\) è aperto, quindi non compatto"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 421,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Sia \\(D=\\left(0,\\ \\frac{1}{2}\\right]\\) l'insieme di definizione trovato al punto precedente (con \\(0<\\frac{1}{2}\\)). Quale affermazione e' corretta?",
+    "options": [
+      "\\(D\\) è aperto, quindi non ammette né massimo né minimo",
+      "\\(D\\) è illimitato superiormente, quindi non ammette massimo",
+      "\\(D\\) è limitato e ammette massimo (\\(\\max D=\\frac{1}{2}\\)), ma non ammette minimo (\\(\\inf D=0\\) non è un punto di \\(D\\)); \\(D\\) non è né aperto né chiuso, quindi non è compatto",
+      "\\(D\\) è chiuso e limitato, quindi compatto per il teorema di Heine-Borel"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 422,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "L'intervallo \\(D=\\left[e^{-3},\\ e^{3}\\right]\\) trovato al punto precedente: quale affermazione è corretta?",
+    "options": [
+      "\\(D\\) non ammette né massimo né minimo poiché è un intervallo",
+      "\\(D\\) è chiuso e limitato, quindi compatto per il teorema di Heine-Borel; ammette massimo \\(e^{3}\\) e minimo \\(e^{-3}\\), e \\(\\operatorname{Fr}D=\\{e^{-3},e^{3}\\}\\subset D\\)",
+      "\\(D\\) è limitato ma non chiuso, quindi non compatto",
+      "\\(D\\) è aperto, quindi non compatto"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 423,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Sia D l\\'insieme di definizione di \\(f(x)=\\dfrac{\\log x+1}{\\log x-1}\\). L\\'affermazione \"D è chiuso\" è:",
+    "options": [
+      "Falsa: D = \\((0,e)\\cup(e,+\\infty)\\), unione di due intervalli aperti, quindi D è aperto, non chiuso",
+      "Falsa: D è addirittura tutto \\(\\mathbb{R}\\)",
+      "Vera: ogni dominio di una funzione razionale in \\(\\log x\\) è chiuso",
+      "Vera: D è il complementare di un punto, quindi chiuso"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 424,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Sia \\(D=\\left(\\frac{1}{3},\\ \\frac{2}{3}\\right]\\) l'insieme di definizione trovato al punto precedente (con \\(\\frac{1}{3}<\\frac{2}{3}\\)). Quale affermazione e' corretta?",
+    "options": [
+      "\\(D\\) è limitato e ammette massimo (\\(\\max D=\\frac{2}{3}\\)), ma non ammette minimo (\\(\\inf D=\\frac{1}{3}\\) non è un punto di \\(D\\)); \\(D\\) non è né aperto né chiuso, quindi non è compatto",
+      "\\(D\\) è chiuso e limitato, quindi compatto per il teorema di Heine-Borel",
+      "\\(D\\) è illimitato superiormente, quindi non ammette massimo",
+      "\\(D\\) è aperto, quindi non ammette né massimo né minimo"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 425,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "L'intervallo \\(D=\\left(e^{-3},\\ e^{3}\\right)\\) trovato al punto precedente: quale affermazione è corretta?",
+    "options": [
+      "\\(D\\) ammette massimo \\(e^{3}\\) e minimo \\(e^{-3}\\)",
+      "\\(D\\) è un intervallo aperto e limitato, ma non è chiuso: non è compatto, non ammette né massimo né minimo, e \\(\\operatorname{Fr}D=\\{e^{-3},e^{3}\\}\\)",
+      "\\(D\\) è compatto poiché è limitato",
+      "\\(D\\) è chiuso e limitato, quindi compatto"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 426,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "L'affermazione \\(X\\subset\\mathbb{R}\\) limitato \\(\\Rightarrow\\) esiste \\(\\min X\\) è:",
+    "options": [
+      "Falsa: es. \\(X=(0,1)\\) è limitato ma non ha minimo (l'estremo inferiore 0 non è raggiunto)",
+      "Falsa: nessun insieme limitato ha estremo inferiore",
+      "Vera: per l'assioma di completezza di \\(\\mathbb{R}\\)",
+      "Vera: ogni insieme limitato ha minimo e massimo"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 427,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Il dominio \\(D\\) trovato al punto precedente coincide con \\(\\mathbb{R}\\) poiché \\(t^2-t+2>0\\ \\forall t\\in\\mathbb{R}\\) (discriminante negativo, con \\(t=e^x\\)). Quale affermazione su \\(D=\\mathbb{R}\\) è corretta?",
+    "options": [
+      "\\(D=\\mathbb{R}\\) è aperto ma non chiuso",
+      "\\(D=\\mathbb{R}\\) è limitato",
+      "\\(D=\\mathbb{R}\\) è compatto poiché è chiuso",
+      "\\(D=\\mathbb{R}\\) è sia aperto che chiuso (insieme chiuso-aperto), illimitato, quindi non compatto, e ha frontiera \\(\\operatorname{Fr}D=\\emptyset\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 428,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Il dominio \\(D\\) trovato al punto precedente coincide con \\(\\mathbb{R}\\) poiché \\(t^2-t+3>0\\ \\forall t\\in\\mathbb{R}\\) (discriminante negativo, con \\(t=e^x\\)). Quale affermazione su \\(D=\\mathbb{R}\\) è corretta?",
+    "options": [
+      "\\(D=\\mathbb{R}\\) è compatto poiché è chiuso",
+      "\\(D=\\mathbb{R}\\) è sia aperto che chiuso (insieme chiuso-aperto), illimitato, quindi non compatto, e ha frontiera \\(\\operatorname{Fr}D=\\emptyset\\)",
+      "\\(D=\\mathbb{R}\\) è aperto ma non chiuso",
+      "\\(D=\\mathbb{R}\\) è limitato"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 429,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Sia \\(p(x)=9x^9-7x^7+5x^5\\). L'affermazione \\\"p ha almeno uno zero reale\\\" è:",
+    "options": [
+      "Vera: \\(p(x)=x^5(9x^4-7x^2+5)\\), quindi \\(p(0)=0\\): almeno lo zero \\(x=0\\) esiste",
+      "Vera, ma il suo unico zero è \\(x=1\\)",
+      "Falsa: essendo di grado 9, p non ha zeri reali ma solo complessi",
+      "Falsa: p non si annulla mai per \\(x\\in\\mathbb{R}\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 430,
+    "chapter": 1,
+    "topic": "Numeri reali",
+    "text": "Sia \\(D=\\left(- \\frac{3}{2},\\ -1\\right]\\) l'insieme di definizione trovato al punto precedente (con \\(- \\frac{3}{2}<-1\\)). Quale affermazione e' corretta?",
+    "options": [
+      "\\(D\\) è chiuso e limitato, quindi compatto per il teorema di Heine-Borel",
+      "\\(D\\) è limitato e ammette massimo (\\(\\max D=-1\\)), ma non ammette minimo (\\(\\inf D=- \\frac{3}{2}\\) non è un punto di \\(D\\)); \\(D\\) non è né aperto né chiuso, quindi non è compatto",
+      "\\(D\\) è illimitato superiormente, quindi non ammette massimo",
+      "\\(D\\) è aperto, quindi non ammette né massimo né minimo"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 431,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z+4i+\\operatorname{Re}(z)\\left(i+(\\operatorname{Im}z)^2\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{4i\\right\\}\\)",
+      "\\(\\left\\{8-2i\\right\\}\\)",
+      "\\(\\left\\{-5+i,\\ -3-i,\\ -4i\\right\\}\\)",
+      "\\(\\left\\{-4i\\right\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 432,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "L\\'affermazione \"la parte immaginaria di \\(z=\\dfrac{1}{2-3i}\\) scritta in forma algebrica è \\(-3i\\)\" è:",
+    "options": [
+      "Vera: basta guardare il segno davanti a \\(3i\\) nel denominatore",
+      "Vera: \\(\\operatorname{Im}(z)\\) può essere un numero complesso",
+      "Falsa: \\(\\operatorname{Im}(z)=-3/13\\)",
+      "Falsa: razionalizzando, \\(z=\\dfrac{2+3i}{13}\\), quindi \\(\\operatorname{Im}(z)=3/13\\) (un numero reale, non \\(-3i\\))"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 433,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z+2|z|^2=0 \\).",
+    "options": [
+      "\\(\\left\\{0,\\ \\frac{1}{2}\\right\\}\\)",
+      "\\(\\left\\{-1,\\ \\frac{1}{2}\\right\\}\\)",
+      "\\(\\left\\{- \\frac{1}{2},\\ 0\\right\\}\\)",
+      "\\(\\emptyset\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 434,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( |z|\\left(z^{3}+64\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{64}\\left(\\cos\\frac{\\pi+2k\\pi}{3}+i\\sin\\frac{\\pi+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{64}\\left(\\cos\\frac{0+2k\\pi}{3}+i\\sin\\frac{0+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\)",
+      "\\(\\left\\{\\sqrt[3]{64}\\left(\\cos\\frac{\\pi+2k\\pi}{3}+i\\sin\\frac{\\pi+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 435,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Determinare le soluzioni \\(z\\in\\mathbb{C}\\) dell'equazione \\( z^2-z\\bar z-4i z=0 \\).",
+    "options": [
+      "\\(\\left\\{z=x-2i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=-2+iy\\,:\\,y\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=x+2i\\,:\\,x\\in\\mathbb{R}\\right\\}\\)",
+      "\\(\\left\\{z=x+2i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 436,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Determinare le soluzioni \\(z\\in\\mathbb{C}\\) dell'equazione \\( z^2-z\\bar z+2i z=0 \\).",
+    "options": [
+      "\\(\\left\\{z=1+iy\\,:\\,y\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=x-i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=x-i\\,:\\,x\\in\\mathbb{R}\\right\\}\\)",
+      "\\(\\left\\{z=x+i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 437,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z+5i+\\operatorname{Re}(z)\\left(i+(\\operatorname{Im}z)^2\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{-6+i,\\ -4-i,\\ -5i\\right\\}\\)",
+      "\\(\\left\\{-5i\\right\\}\\)",
+      "\\(\\left\\{\\frac{125}{8}-\\frac{5}{2}i\\right\\}\\)",
+      "\\(\\left\\{5i\\right\\}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 438,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z+2|z|^2=3 \\).",
+    "options": [
+      "\\(\\emptyset\\)",
+      "\\(\\left\\{- \\frac{3}{2},\\ 1\\right\\}\\)",
+      "\\(\\left\\{- \\frac{\\sqrt{33}}{4} - \\frac{1}{4},\\ - \\frac{1}{4} + \\frac{\\sqrt{33}}{4}\\right\\}\\)",
+      "\\(\\left\\{- \\frac{\\sqrt{17}}{4} - \\frac{1}{4},\\ - \\frac{1}{4} + \\frac{\\sqrt{17}}{4}\\right\\}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 439,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z+2|z|^2=2 \\).",
+    "options": [
+      "\\(\\left\\{- \\frac{\\sqrt{17}}{4} - \\frac{1}{4},\\ - \\frac{1}{4} + \\frac{\\sqrt{17}}{4}\\right\\}\\)",
+      "\\(\\emptyset\\)",
+      "\\(\\left\\{-1,\\ \\frac{1}{2}\\right\\}\\)",
+      "\\(\\left\\{- \\frac{3}{2},\\ 1\\right\\}\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 440,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Determinare le soluzioni \\(z\\in\\mathbb{C}\\) dell'equazione \\( z^2-z\\bar z-i z=0 \\).",
+    "options": [
+      "\\(\\left\\{z=x-\\frac{1}{2}i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=x+\\frac{1}{2}i\\,:\\,x\\in\\mathbb{R}\\right\\}\\)",
+      "\\(\\left\\{z=- \\frac{1}{2}+iy\\,:\\,y\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=x+\\frac{1}{2}i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 441,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( |z|\\left(z^{3}+8\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{0\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{8}\\left(\\cos\\frac{\\pi+2k\\pi}{3}+i\\sin\\frac{\\pi+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{\\sqrt[3]{8}\\left(\\cos\\frac{\\pi+2k\\pi}{3}+i\\sin\\frac{\\pi+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{8}\\left(\\cos\\frac{0+2k\\pi}{3}+i\\sin\\frac{0+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 442,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Determinare le soluzioni \\(z\\in\\mathbb{C}\\) dell'equazione \\( z^2-z\\bar z+i z=0 \\).",
+    "options": [
+      "\\(\\left\\{z=x-\\frac{1}{2}i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=x+\\frac{1}{2}i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=\\frac{1}{2}+iy\\,:\\,y\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=x-\\frac{1}{2}i\\,:\\,x\\in\\mathbb{R}\\right\\}\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 443,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Determinare le soluzioni \\(z\\in\\mathbb{C}\\) dell'equazione \\( z^2-z\\bar z-2i z=0 \\).",
+    "options": [
+      "\\(\\left\\{z=x+i\\,:\\,x\\in\\mathbb{R}\\right\\}\\)",
+      "\\(\\left\\{z=x-i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=-1+iy\\,:\\,y\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=x+i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 444,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( |z|\\left(z^{3}+27\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{\\sqrt[3]{27}\\left(\\cos\\frac{\\pi+2k\\pi}{3}+i\\sin\\frac{\\pi+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{27}\\left(\\cos\\frac{\\pi+2k\\pi}{3}+i\\sin\\frac{\\pi+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{27}\\left(\\cos\\frac{0+2k\\pi}{3}+i\\sin\\frac{0+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 445,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z-4i+\\operatorname{Re}(z)\\left(i+(\\operatorname{Im}z)^2\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{-4i\\right\\}\\)",
+      "\\(\\left\\{4i\\right\\}\\)",
+      "\\(\\left\\{-8+2i\\right\\}\\)",
+      "\\(\\left\\{4i,\\ 3+i,\\ 5-i\\right\\}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 446,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Determinare le soluzioni \\(z\\in\\mathbb{C}\\) dell'equazione \\( z^2-z\\bar z+3i z=0 \\).",
+    "options": [
+      "\\(\\left\\{z=\\frac{3}{2}+iy\\,:\\,y\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=x+\\frac{3}{2}i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=x-\\frac{3}{2}i\\,:\\,x\\in\\mathbb{R}\\right\\}\\)",
+      "\\(\\left\\{z=x-\\frac{3}{2}i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 447,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z-2|z|^2=-3 \\).",
+    "options": [
+      "\\(\\left\\{\\frac{1}{4} - \\frac{\\sqrt{17}}{4},\\ \\frac{1}{4} + \\frac{\\sqrt{17}}{4}\\right\\}\\)",
+      "\\(\\left\\{-1,\\ \\frac{3}{2}\\right\\}\\)",
+      "\\(\\left\\{\\frac{1}{4} - \\frac{\\sqrt{33}}{4},\\ \\frac{1}{4} + \\frac{\\sqrt{33}}{4}\\right\\}\\)",
+      "\\(\\emptyset\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 448,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z-|z|^2=-4 \\).",
+    "options": [
+      "\\(\\emptyset\\)",
+      "\\(\\left\\{\\frac{1}{2} - \\frac{\\sqrt{13}}{2},\\ \\frac{1}{2} + \\frac{\\sqrt{13}}{2}\\right\\}\\)",
+      "\\(\\left\\{\\frac{1}{2} - \\frac{\\sqrt{21}}{2},\\ \\frac{1}{2} + \\frac{\\sqrt{21}}{2}\\right\\}\\)",
+      "\\(\\left\\{\\frac{1}{2} - \\frac{\\sqrt{17}}{2},\\ \\frac{1}{2} + \\frac{\\sqrt{17}}{2}\\right\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 449,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z-2|z|^2=-1 \\).",
+    "options": [
+      "\\(\\left\\{- \\frac{1}{2},\\ 1\\right\\}\\)",
+      "\\(\\emptyset\\)",
+      "\\(\\left\\{0,\\ \\frac{1}{2}\\right\\}\\)",
+      "\\(\\left\\{\\frac{1}{4} - \\frac{\\sqrt{17}}{4},\\ \\frac{1}{4} + \\frac{\\sqrt{17}}{4}\\right\\}\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 450,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z-3i+\\operatorname{Re}(z)\\left(i+(\\operatorname{Im}z)^2\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{-3i\\right\\}\\)",
+      "\\(\\left\\{3i,\\ 2+i,\\ 4-i\\right\\}\\)",
+      "\\(\\left\\{3i\\right\\}\\)",
+      "\\(\\left\\{- \\frac{27}{8}+\\frac{3}{2}i\\right\\}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 451,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z+2|z|^2=5 \\).",
+    "options": [
+      "\\(\\left\\{- \\frac{\\sqrt{33}}{4} - \\frac{1}{4},\\ - \\frac{1}{4} + \\frac{\\sqrt{33}}{4}\\right\\}\\)",
+      "\\(\\left\\{-2,\\ \\frac{3}{2}\\right\\}\\)",
+      "\\(\\emptyset\\)",
+      "\\(\\left\\{- \\frac{\\sqrt{41}}{4} - \\frac{1}{4},\\ - \\frac{1}{4} + \\frac{\\sqrt{41}}{4}\\right\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 452,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( |z|\\left(z^{3}+1\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{0\\right\\}\\)",
+      "\\(\\left\\{\\sqrt[3]{1}\\left(\\cos\\frac{\\pi+2k\\pi}{3}+i\\sin\\frac{\\pi+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{1}\\left(\\cos\\frac{\\pi+2k\\pi}{3}+i\\sin\\frac{\\pi+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{1}\\left(\\cos\\frac{0+2k\\pi}{3}+i\\sin\\frac{0+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 453,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Determinare le soluzioni \\(z\\in\\mathbb{C}\\) dell'equazione \\( z^2-z\\bar z+4i z=0 \\).",
+    "options": [
+      "\\(\\left\\{z=x+2i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=x-2i\\,:\\,x\\in\\mathbb{R}\\right\\}\\)",
+      "\\(\\left\\{z=x-2i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=2+iy\\,:\\,y\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 454,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z-|z|^2=-3 \\).",
+    "options": [
+      "\\(\\left\\{\\frac{1}{2} - \\frac{\\sqrt{17}}{2},\\ \\frac{1}{2} + \\frac{\\sqrt{17}}{2}\\right\\}\\)",
+      "\\(\\emptyset\\)",
+      "\\(\\left\\{-1,\\ 2\\right\\}\\)",
+      "\\(\\left\\{\\frac{1}{2} - \\frac{\\sqrt{13}}{2},\\ \\frac{1}{2} + \\frac{\\sqrt{13}}{2}\\right\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 455,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z-2|z|^2=0 \\).",
+    "options": [
+      "\\(\\left\\{- \\frac{1}{2},\\ 0\\right\\}\\)",
+      "\\(\\emptyset\\)",
+      "\\(\\left\\{- \\frac{1}{2},\\ 1\\right\\}\\)",
+      "\\(\\left\\{0,\\ \\frac{1}{2}\\right\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 456,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( |z|\\left(z^{3}-27\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{27}\\left(\\cos\\frac{0+2k\\pi}{3}+i\\sin\\frac{0+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{27}\\left(\\cos\\frac{\\pi+2k\\pi}{3}+i\\sin\\frac{\\pi+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{\\sqrt[3]{27}\\left(\\cos\\frac{0+2k\\pi}{3}+i\\sin\\frac{0+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 457,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( |z|\\left(z^{3}-125\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{125}\\left(\\cos\\frac{\\pi+2k\\pi}{3}+i\\sin\\frac{\\pi+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\)",
+      "\\(\\left\\{\\sqrt[3]{125}\\left(\\cos\\frac{0+2k\\pi}{3}+i\\sin\\frac{0+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{125}\\left(\\cos\\frac{0+2k\\pi}{3}+i\\sin\\frac{0+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 458,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z+3i+\\operatorname{Re}(z)\\left(i+(\\operatorname{Im}z)^2\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{-3i\\right\\}\\)",
+      "\\(\\left\\{\\frac{27}{8}-\\frac{3}{2}i\\right\\}\\)",
+      "\\(\\left\\{3i\\right\\}\\)",
+      "\\(\\left\\{-4+i,\\ -2-i,\\ -3i\\right\\}\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 459,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z+i+\\operatorname{Re}(z)\\left(i+(\\operatorname{Im}z)^2\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{i\\right\\}\\)",
+      "\\(\\left\\{-i\\right\\}\\)",
+      "\\(\\left\\{\\frac{1}{8}-\\frac{1}{2}i\\right\\}\\)",
+      "\\(\\left\\{-2+i,\\ -i\\right\\}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 460,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z-|z|^2=-6 \\).",
+    "options": [
+      "\\(\\left\\{\\frac{1}{2} - \\frac{\\sqrt{29}}{2},\\ \\frac{1}{2} + \\frac{\\sqrt{29}}{2}\\right\\}\\)",
+      "\\(\\emptyset\\)",
+      "\\(\\left\\{-2,\\ 3\\right\\}\\)",
+      "\\(\\left\\{\\frac{1}{2} - \\frac{\\sqrt{21}}{2},\\ \\frac{1}{2} + \\frac{\\sqrt{21}}{2}\\right\\}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 461,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( |z|\\left(z^{3}-1\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{1}\\left(\\cos\\frac{0+2k\\pi}{3}+i\\sin\\frac{0+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{1}\\left(\\cos\\frac{\\pi+2k\\pi}{3}+i\\sin\\frac{\\pi+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{\\sqrt[3]{1}\\left(\\cos\\frac{0+2k\\pi}{3}+i\\sin\\frac{0+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 462,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( |z|\\left(z^{3}+125\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{\\sqrt[3]{125}\\left(\\cos\\frac{\\pi+2k\\pi}{3}+i\\sin\\frac{\\pi+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{125}\\left(\\cos\\frac{\\pi+2k\\pi}{3}+i\\sin\\frac{\\pi+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\cup\\left\\{\\sqrt[3]{125}\\left(\\cos\\frac{0+2k\\pi}{3}+i\\sin\\frac{0+2k\\pi}{3}\\right),\\ k=0,\\dots,2\\right\\}\\)",
+      "\\(\\left\\{0\\right\\}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 463,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z-2i+\\operatorname{Re}(z)\\left(i+(\\operatorname{Im}z)^2\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{2i,\\ 1+i,\\ 3-i\\right\\}\\)",
+      "\\(\\left\\{2i\\right\\}\\)",
+      "\\(\\left\\{-1+i\\right\\}\\)",
+      "\\(\\left\\{-2i\\right\\}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 464,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Risolvere in \\(\\mathbb{C}\\) l'equazione \\( z+2i+\\operatorname{Re}(z)\\left(i+(\\operatorname{Im}z)^2\\right)=0 \\).",
+    "options": [
+      "\\(\\left\\{-3+i,\\ -1-i,\\ -2i\\right\\}\\)",
+      "\\(\\left\\{2i\\right\\}\\)",
+      "\\(\\left\\{1-i\\right\\}\\)",
+      "\\(\\left\\{-2i\\right\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 465,
+    "chapter": 2,
+    "topic": "Numeri complessi",
+    "text": "Determinare le soluzioni \\(z\\in\\mathbb{C}\\) dell'equazione \\( z^2-z\\bar z-3i z=0 \\).",
+    "options": [
+      "\\(\\left\\{z=x-\\frac{3}{2}i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=x+\\frac{3}{2}i\\,:\\,x\\in\\mathbb{R}\\right\\}\\)",
+      "\\(\\left\\{z=x+\\frac{3}{2}i\\,:\\,x\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)",
+      "\\(\\left\\{z=- \\frac{3}{2}+iy\\,:\\,y\\in\\mathbb{R}\\right\\}\\cup\\{0\\}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 466,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\dfrac{1}{\\sqrt{1-\\log^2 x}} \\).",
+    "options": [
+      "\\(\\left(0,\\ e\\right)\\)",
+      "\\(\\left[e^{-1},\\ e\\right]\\)",
+      "\\(\\left(e^{-1},\\ e\\right]\\)",
+      "\\(\\left(e^{-1},\\ e\\right)\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 467,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\log\\left(e^{2x}-e^{x}+2\\right) \\).",
+    "options": [
+      "\\(\\left(0,+\\infty\\right)\\)",
+      "\\(\\mathbb{R}\\)",
+      "\\(\\mathbb{R}\\setminus\\{0\\}\\)",
+      "\\(\\left(-\\infty,0\\right)\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 468,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\sqrt{1-\\log^2 x} \\).",
+    "options": [
+      "\\(\\left(e^{-1},\\ e\\right)\\)",
+      "\\(\\left[e^{-1},\\ e\\right)\\)",
+      "\\(\\left[0,\\ e\\right]\\)",
+      "\\(\\left[e^{-1},\\ e\\right]\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 469,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\dfrac{1}{\\sqrt{9-\\log^2 x}} \\).",
+    "options": [
+      "\\(\\left[e^{-3},\\ e^{3}\\right]\\)",
+      "\\(\\left(0,\\ e^{3}\\right)\\)",
+      "\\(\\left(e^{-3},\\ e^{3}\\right)\\)",
+      "\\(\\left(e^{-3},\\ e^{3}\\right]\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 470,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\dfrac{1}{(x--2)^2\\left(\\log|x|+1\\right)^3} \\).",
+    "options": [
+      "\\(\\mathbb{R}\\setminus\\left\\{0,\\ -2\\right\\}\\)",
+      "\\(\\mathbb{R}\\setminus\\left\\{-e,\\ 0,\\ e,\\ -2\\right\\}\\)",
+      "\\(\\left(0,+\\infty\\right)\\setminus\\left\\{\\frac{1}{e},\\ -2\\right\\}\\)",
+      "\\(\\mathbb{R}\\setminus\\left\\{-\\frac{1}{e},\\ 0,\\ \\frac{1}{e},\\ -2\\right\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 471,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\dfrac{1}{(x-4)^2\\left(\\log|x|+1\\right)^3} \\).",
+    "options": [
+      "\\(\\mathbb{R}\\setminus\\left\\{0,\\ 4\\right\\}\\)",
+      "\\(\\mathbb{R}\\setminus\\left\\{-\\frac{1}{e},\\ 0,\\ \\frac{1}{e},\\ 4\\right\\}\\)",
+      "\\(\\left(0,+\\infty\\right)\\setminus\\left\\{\\frac{1}{e},\\ 4\\right\\}\\)",
+      "\\(\\mathbb{R}\\setminus\\left\\{-e,\\ 0,\\ e,\\ 4\\right\\}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 472,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\sqrt{4-\\log^2 x} \\).",
+    "options": [
+      "\\(\\left(e^{-2},\\ e^{2}\\right)\\)",
+      "\\(\\left[e^{-2},\\ e^{2}\\right]\\)",
+      "\\(\\left[e^{-2},\\ e^{2}\\right)\\)",
+      "\\(\\left[0,\\ e^{2}\\right]\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 473,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\log\\left(e^{2x}-e^{x}+1\\right) \\).",
+    "options": [
+      "\\(\\left(0,+\\infty\\right)\\)",
+      "\\(\\mathbb{R}\\setminus\\{0\\}\\)",
+      "\\(\\left(-\\infty,0\\right)\\)",
+      "\\(\\mathbb{R}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 474,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\log_{1/2}\\left(\\arcsin(x+4)\\right) \\).",
+    "options": [
+      "\\(\\left(-4,\\ -3\\right]\\)",
+      "\\(\\left[-4,\\ -3\\right]\\)",
+      "\\(\\left(-4,\\ -3\\right)\\)",
+      "\\(\\left[-4,\\ -3\\right)\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 475,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\log\\left(e^{2x}-e^{x}+8\\right) \\).",
+    "options": [
+      "\\(\\mathbb{R}\\setminus\\{0\\}\\)",
+      "\\(\\left(-\\infty,0\\right)\\)",
+      "\\(\\left(0,+\\infty\\right)\\)",
+      "\\(\\mathbb{R}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 476,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\dfrac{1}{\\sqrt{4-\\log^2 x}} \\).",
+    "options": [
+      "\\(\\left(e^{-2},\\ e^{2}\\right]\\)",
+      "\\(\\left[e^{-2},\\ e^{2}\\right]\\)",
+      "\\(\\left(e^{-2},\\ e^{2}\\right)\\)",
+      "\\(\\left(0,\\ e^{2}\\right)\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 477,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\log_{1/2}\\left(\\arcsin(3x+3)\\right) \\).",
+    "options": [
+      "\\(\\left(-1,\\ - \\frac{2}{3}\\right)\\)",
+      "\\(\\left(-1,\\ - \\frac{2}{3}\\right]\\)",
+      "\\(\\left[-1,\\ - \\frac{2}{3}\\right)\\)",
+      "\\(\\left[-1,\\ - \\frac{2}{3}\\right]\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 478,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\log_{1/2}\\left(\\arcsin(2x+1)\\right) \\).",
+    "options": [
+      "\\(\\left(- \\frac{1}{2},\\ 0\\right]\\)",
+      "\\(\\left[- \\frac{1}{2},\\ 0\\right)\\)",
+      "\\(\\left(- \\frac{1}{2},\\ 0\\right)\\)",
+      "\\(\\left[- \\frac{1}{2},\\ 0\\right]\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 479,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\log\\left(e^{2x}-e^{x}+3\\right) \\).",
+    "options": [
+      "\\(\\left(-\\infty,0\\right)\\)",
+      "\\(\\mathbb{R}\\setminus\\{0\\}\\)",
+      "\\(\\mathbb{R}\\)",
+      "\\(\\left(0,+\\infty\\right)\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 480,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\dfrac{1}{(x--4)^2\\left(\\log|x|+1\\right)^3} \\).",
+    "options": [
+      "\\(\\mathbb{R}\\setminus\\left\\{-e,\\ 0,\\ e,\\ -4\\right\\}\\)",
+      "\\(\\mathbb{R}\\setminus\\left\\{0,\\ -4\\right\\}\\)",
+      "\\(\\left(0,+\\infty\\right)\\setminus\\left\\{\\frac{1}{e},\\ -4\\right\\}\\)",
+      "\\(\\mathbb{R}\\setminus\\left\\{-\\frac{1}{e},\\ 0,\\ \\frac{1}{e},\\ -4\\right\\}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 481,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\log_{1/2}\\left(\\arcsin(3x+4)\\right) \\).",
+    "options": [
+      "\\(\\left[- \\frac{4}{3},\\ -1\\right)\\)",
+      "\\(\\left(- \\frac{4}{3},\\ -1\\right)\\)",
+      "\\(\\left(- \\frac{4}{3},\\ -1\\right]\\)",
+      "\\(\\left[- \\frac{4}{3},\\ -1\\right]\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 482,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\dfrac{1}{(x-3)^2\\left(\\log|x|+1\\right)^3} \\).",
+    "options": [
+      "\\(\\left(0,+\\infty\\right)\\setminus\\left\\{\\frac{1}{e},\\ 3\\right\\}\\)",
+      "\\(\\mathbb{R}\\setminus\\left\\{-\\frac{1}{e},\\ 0,\\ \\frac{1}{e},\\ 3\\right\\}\\)",
+      "\\(\\mathbb{R}\\setminus\\left\\{0,\\ 3\\right\\}\\)",
+      "\\(\\mathbb{R}\\setminus\\left\\{-e,\\ 0,\\ e,\\ 3\\right\\}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 483,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\log_{1/2}\\left(\\arcsin(2x+3)\\right) \\).",
+    "options": [
+      "\\(\\left(- \\frac{3}{2},\\ -1\\right]\\)",
+      "\\(\\left[- \\frac{3}{2},\\ -1\\right]\\)",
+      "\\(\\left(- \\frac{3}{2},\\ -1\\right)\\)",
+      "\\(\\left[- \\frac{3}{2},\\ -1\\right)\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 484,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\log_{1/2}\\left(\\arcsin(3x-1)\\right) \\).",
+    "options": [
+      "\\(\\left(\\frac{1}{3},\\ \\frac{2}{3}\\right)\\)",
+      "\\(\\left(\\frac{1}{3},\\ \\frac{2}{3}\\right]\\)",
+      "\\(\\left[\\frac{1}{3},\\ \\frac{2}{3}\\right]\\)",
+      "\\(\\left[\\frac{1}{3},\\ \\frac{2}{3}\\right)\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 485,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\dfrac{1}{(x--3)^2\\left(\\log|x|+1\\right)^3} \\).",
+    "options": [
+      "\\(\\mathbb{R}\\setminus\\left\\{-\\frac{1}{e},\\ 0,\\ \\frac{1}{e},\\ -3\\right\\}\\)",
+      "\\(\\left(0,+\\infty\\right)\\setminus\\left\\{\\frac{1}{e},\\ -3\\right\\}\\)",
+      "\\(\\mathbb{R}\\setminus\\left\\{-e,\\ 0,\\ e,\\ -3\\right\\}\\)",
+      "\\(\\mathbb{R}\\setminus\\left\\{0,\\ -3\\right\\}\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 486,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\sqrt{9-\\log^2 x} \\).",
+    "options": [
+      "\\(\\left[e^{-3},\\ e^{3}\\right]\\)",
+      "\\(\\left[0,\\ e^{3}\\right]\\)",
+      "\\(\\left(e^{-3},\\ e^{3}\\right)\\)",
+      "\\(\\left[e^{-3},\\ e^{3}\\right)\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 487,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "L'affermazione \\(h(x)=\\dfrac{x}{\\sqrt{1-x^2}}\\) è dispari è:",
+    "options": [
+      "Falsa: h non ha alcuna simmetria",
+      "Vera: \\(h(-x) = \\dfrac{-x}{\\sqrt{1-x^2}} = -h(x)\\) per ogni x nel dominio",
+      "Vera, ma solo su metà del dominio",
+      "Falsa: h è pari, perché contiene \\(x^2\\) al denominatore"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 488,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\log_{1/2}\\left(\\arcsin(2x+0)\\right) \\).",
+    "options": [
+      "\\(\\left(0,\\ \\frac{1}{2}\\right)\\)",
+      "\\(\\left[0,\\ \\frac{1}{2}\\right)\\)",
+      "\\(\\left(0,\\ \\frac{1}{2}\\right]\\)",
+      "\\(\\left[0,\\ \\frac{1}{2}\\right]\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 489,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\dfrac{1}{(x-2)^2\\left(\\log|x|+1\\right)^3} \\).",
+    "options": [
+      "\\(\\mathbb{R}\\setminus\\left\\{-\\frac{1}{e},\\ 0,\\ \\frac{1}{e},\\ 2\\right\\}\\)",
+      "\\(\\left(0,+\\infty\\right)\\setminus\\left\\{\\frac{1}{e},\\ 2\\right\\}\\)",
+      "\\(\\mathbb{R}\\setminus\\left\\{0,\\ 2\\right\\}\\)",
+      "\\(\\mathbb{R}\\setminus\\left\\{-e,\\ 0,\\ e,\\ 2\\right\\}\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 490,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\log\\left(e^{2x}-e^{x}+5\\right) \\).",
+    "options": [
+      "\\(\\mathbb{R}\\)",
+      "\\(\\left(0,+\\infty\\right)\\)",
+      "\\(\\mathbb{R}\\setminus\\{0\\}\\)",
+      "\\(\\left(-\\infty,0\\right)\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 491,
+    "chapter": 3,
+    "topic": "Funzioni reali",
+    "text": "Determinare l'insieme di definizione \\(D\\) di \\( g(x)=\\log_{1/2}\\left(\\arcsin(x-3)\\right) \\).",
+    "options": [
+      "\\(\\left[3,\\ 4\\right)\\)",
+      "\\(\\left(3,\\ 4\\right)\\)",
+      "\\(\\left[3,\\ 4\\right]\\)",
+      "\\(\\left(3,\\ 4\\right]\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 492,
+    "chapter": 4,
+    "topic": "Limiti",
+    "text": "L\\'affermazione \"la successione \\(\\left(\\dfrac{5^n-1}{5^n+1}\\right)_{n\\in\\mathbb{N}}\\) è limitata\" è:",
+    "options": [
+      "Vera, ma solo perché è decrescente",
+      "Vera: la successione è crescente da 0 e tende a 1 restando sempre in \\([0,1)\\), quindi è limitata",
+      "Falsa: la successione non è definita per n grandi",
+      "Falsa: il numeratore e il denominatore divergono entrambi a \\(+\\infty\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 493,
+    "chapter": 4,
+    "topic": "Limiti",
+    "text": "L\\'affermazione \\(\\displaystyle\\lim_{n\\to+\\infty}\\frac{\\sin(n^2)}{n^2}=1\\) è:",
+    "options": [
+      "Vera: per \\(n\\to+\\infty\\), \\(\\sin(n^2)\\to n^2\\)",
+      "Falsa: per il teorema del confronto, \\(\\left|\\frac{\\sin(n^2)}{n^2}\\right|\\le\\frac{1}{n^2}\\to 0\\), quindi il limite vale 0, non 1",
+      "Falsa: il limite non esiste perché \\(\\sin(n^2)\\) oscilla",
+      "Vera: \\(\\sin(n^2)\\) e \\(n^2\\) crescono allo stesso modo"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 494,
+    "chapter": 4,
+    "topic": "Limiti",
+    "text": "L\\'affermazione \"se esiste \\(\\lim_{n\\to+\\infty}a_n=\\ell>0\\) allora \\(a_n>0\\) per ogni \\(n\\in\\mathbb{N}\\)\" è:",
+    "options": [
+      "Falsa: il teorema della permanenza del segno non fornisce alcuna informazione",
+      "Falsa: per il Teorema della permanenza del segno, \\(a_n>0\\) vale solo DEFINITIVAMENTE (da un certo n in poi), non necessariamente per i primi termini",
+      "Vera: per la definizione stessa di limite",
+      "Vera: se il limite è positivo, tutti i termini della successione sono positivi"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 495,
+    "chapter": 4,
+    "topic": "Limiti",
+    "text": "L'affermazione \\((a_n)_{n\\in\\mathbb{N}}\\) limitata \\(\\Rightarrow (a_n)_{n\\in\\mathbb{N}}\\) monotòna è:",
+    "options": [
+      "Falsa: nessuna successione limitata può essere non monotòna",
+      "Falsa: es. \\(a_n=(-1)^n\\) è limitata ma non è monotòna",
+      "Vera: per il Teorema di Bolzano-Weierstrass",
+      "Vera: ogni successione limitata è definitivamente monotòna"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 496,
+    "chapter": 4,
+    "topic": "Limiti",
+    "text": "L\\'affermazione \"\\((a_n),(b_n)\\) tali che \\(a_n\\le b_n\\ \\forall n\\), \\(b_n\\to+\\infty \\Rightarrow a_n\\to+\\infty\\)\" è:",
+    "options": [
+      "Falsa: la conclusione corretta è \\(a_n\\to-\\infty\\)",
+      "Falsa: la disuguaglianza va nella direzione sbagliata per questa conclusione; es. \\(a_n=0\\le b_n=n\\to+\\infty\\), ma \\(a_n\\) non diverge",
+      "Vera: per il Teorema del confronto per successioni divergenti",
+      "Vera: se il maggiorante diverge, anche il minorante deve divergere"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 497,
+    "chapter": 4,
+    "topic": "Limiti",
+    "text": "L'affermazione \\((a_n)_{n\\in\\mathbb{N}}\\) monotòna \\(\\Rightarrow (a_n)_{n\\in\\mathbb{N}}\\) regolare è:",
+    "options": [
+      "Vera, ma solo per le successioni crescenti, non per quelle decrescenti",
+      "Vera: è il Teorema di regolarità delle successioni monotòne (ogni successione monotòna converge o diverge a \\(\\pm\\infty\\))",
+      "Falsa: servirebbe anche la limitatezza",
+      "Falsa: una successione monotòna può non avere alcun limite"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 498,
+    "chapter": 4,
+    "topic": "Limiti",
+    "text": "L'affermazione \\((a_n)_{n\\in\\mathbb{N}}\\) regolare \\(\\Rightarrow (a_n)_{n\\in\\mathbb{N}}\\) convergente è:",
+    "options": [
+      "Falsa: nessuna successione regolare converge",
+      "Falsa: 'regolare' significa convergente OPPURE divergente a \\(\\pm\\infty\\); una successione regolare può benissimo divergere",
+      "Vera: solo le successioni irregolari possono divergere",
+      "Vera: per definizione regolare equivale a convergente"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 499,
+    "chapter": 4,
+    "topic": "Limiti",
+    "text": "L\\'affermazione \"non esiste \\(\\displaystyle\\lim_{n\\to+\\infty}\\dfrac{(-1)^n\\arctan(1/n)}{5n^2+1/n}\\)\" è:",
+    "options": [
+      "Falsa: il limite esiste ma vale \\(+\\infty\\)",
+      "Falsa: il numeratore è limitato (\\(|\\arctan(1/n)|\\le\\pi/2\\)) mentre il denominatore diverge a \\(+\\infty\\): il limite esiste e vale 0",
+      "Vera: il denominatore si annulla per qualche n",
+      "Vera: \\((-1)^n\\) fa oscillare la successione senza limite"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 500,
+    "chapter": 4,
+    "topic": "Limiti",
+    "text": "L'affermazione \\(\\nexists\\displaystyle\\lim_{x\\to+\\infty}\\left(\\cos^2 x+x^3\\arctan(x^2)\\right)\\) è:",
+    "options": [
+      "Falsa: il limite esiste mafinito, vale 0",
+      "Falsa: \\(\\cos^2x\\) è limitato in [0,1] mentre \\(x^3\\arctan(x^2)\\to+\\infty\\cdot\\pi/2=+\\infty\\); il limite esiste e vale \\(+\\infty\\)",
+      "Vera: la somma di una funzione limitata e una divergente non ha limite",
+      "Vera: \\(\\cos^2x\\) oscilla indefinitamente e impedisce l'esistenza del limite"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 501,
+    "chapter": 4,
+    "topic": "Limiti",
+    "text": "L'affermazione \\(h(x)=\\dfrac{\\sqrt{x^2-1}}{x}\\) non ammette limite per \\(x\\to-\\infty\\) è:",
+    "options": [
+      "Falsa: il limite esiste e vale \\(+1\\)",
+      "Falsa: per \\(x\\to-\\infty\\), \\(\\sqrt{x^2-1}\\sim|x|=-x\\), quindi \\(h(x)\\to -x/x=-1\\): il limite esiste e vale \\(-1\\)",
+      "Vera: il dominio non si estende fino a \\(-\\infty\\)",
+      "Vera: la funzione oscilla senza stabilizzarsi"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 502,
+    "chapter": 4,
+    "topic": "Limiti",
+    "text": "L\\'affermazione \"la successione \\(a_n=\\dfrac{(-1)^n}{n^3}\\) è limitata\" è:",
+    "options": [
+      "Vera, ma solo per n pari",
+      "Vera: \\(|a_n|=1/n^3\\le1\\) per ogni \\(n\\ge1\\), quindi la successione è limitata (ed è anche infinitesima)",
+      "Falsa: \\(1/n^3\\to+\\infty\\)",
+      "Falsa: il fattore \\((-1)^n\\) la rende illimitata"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 503,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L\\'affermazione \"\\(f:[-3,+\\infty)\\to\\mathbb{R}\\) continua e strettamente crescente ha almeno uno zero reale\" è:",
+    "options": [
+      "Falsa: senza ipotesi sul segno di f, f potrebbe essere sempre positiva pur essendo continua e strettamente crescente, es. \\(f(x)=e^x\\)",
+      "Vera: ogni funzione strettamente crescente e continua ha uno zero",
+      "Falsa: nessuna funzione strettamente crescente può avere uno zero",
+      "Vera: per il Teorema degli zeri, sempre valido per funzioni monotòne su semirette"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 504,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L\\'affermazione \"una funzione \\(f:\\mathbb{R}\\to\\mathbb{R}\\) continua non può avere come codominio (immagine) \\([0,1]\\cup[2,3]\\)\" è:",
+    "options": [
+      "Vera: \\(\\mathbb{R}\\) è connesso (un intervallo) e l'immagine continua di un connesso è connessa; \\([0,1]\\cup[2,3]\\) è sconnesso, quindi impossibile",
+      "Falsa: basta una funzione a tratti opportuna per ottenere quell'immagine",
+      "Vera, ma solo se f è anche derivabile",
+      "Falsa: il Teorema di Weierstrass lo esclude solo per domini limitati"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 505,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L'affermazione \\(f:X\\subseteq\\mathbb{R}\\to\\mathbb{R},\\ x_0\\in X\\) punto di minimo assoluto per f \\(\\Rightarrow f\\) derivabile in \\(x_0\\) è:",
+    "options": [
+      "Falsa: es. \\(f(x)=|x|\\) ha minimo assoluto in \\(x_0=0\\) ma non è derivabile lì",
+      "Vera: nei punti di estremo assoluto la funzione è sempre derivabile con derivata nulla",
+      "Falsa: nessuna funzione con un minimo assoluto è derivabile in alcun punto",
+      "Vera: per il Teorema di Fermat, sempre applicabile ai minimi assoluti"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 506,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L\\'affermazione \"\\(f:[-3,+\\infty)\\to\\mathbb{R}\\), \\(\\lim_{x\\to+\\infty}f(x)>0 \\Rightarrow f(x)>0\\) per ogni \\(x\\ge-3\\)\" è:",
+    "options": [
+      "Falsa: per il Teorema della permanenza del segno, \\(f(x)>0\\) vale solo DEFINITIVAMENTE (per x grande), non su tutto il dominio",
+      "Vera: se il limite all'infinito è positivo, tutta la funzione è positiva",
+      "Falsa: il teorema della permanenza del segno non esiste per le funzioni, solo per le successioni",
+      "Vera: per definizione di limite finito positivo"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 507,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L'affermazione \\(f:X\\subseteq\\mathbb{R}\\to\\mathbb{R},\\ f(X)\\) intervallo \\(\\Rightarrow X\\) intervallo è:",
+    "options": [
+      "Falsa: X può essere un insieme sconnesso e avere comunque immagine un intervallo (es. f costante su X sconnesso)",
+      "Vera: solo un dominio a forma di intervallo può dare immagine a forma di intervallo",
+      "Vera: per il Teorema di Bolzano applicato all'immagine",
+      "Falsa: l'immagine di una funzione non è mai un intervallo"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 508,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L'affermazione \\(f\\in C((a,b]),\\ f\\) prolungabile con continuità in \\(a\\) \\(\\Rightarrow f\\) limitata è:",
+    "options": [
+      "Vera: prolungando in a si ottiene \\(f\\in C([a,b])\\), dominio compatto, quindi f è limitata per il Teorema di Weierstrass",
+      "Falsa: prolungare in un solo estremo non garantisce nulla sulla limitatezza",
+      "Vera, ma solo se f è anche derivabile",
+      "Falsa: [a,b] non è un insieme compatto"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 509,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L'affermazione \\(h(x)=2\\arctan x-\\sqrt x,\\ x\\in[0,3]\\) è dotata di estremi assoluti è:",
+    "options": [
+      "Vera: h è continua su [0,3], che è chiuso e limitato (compatto); per il Teorema di Weierstrass h ammette massimo e minimo assoluti",
+      "Falsa: \\(\\sqrt x\\) non è definita per \\(x<0\\), quindi il teorema non si applica",
+      "Vera, ma solo perché h è monotòna",
+      "Falsa: [0,3] non è un insieme compatto"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 510,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L'affermazione \\(f:X\\subseteq\\mathbb{R}\\to\\mathbb{R},\\ X\\) compatto \\(\\Rightarrow f\\) limitata è:",
+    "options": [
+      "Falsa: manca l'ipotesi di continuità di f; senza di essa (Teorema di Weierstrass) X compatto da solo non basta",
+      "Vera: la compattezza del dominio basta sempre a garantire la limitatezza di f",
+      "Falsa: nessuna funzione su un compatto è limitata",
+      "Vera: è esattamente il Teorema di Weierstrass"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 511,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L'affermazione \\(f\\in C([a,b]) \\Rightarrow f\\) ha uno e un solo punto di minimo assoluto è:",
+    "options": [
+      "Falsa: il Teorema di Weierstrass garantisce l'esistenza del minimo assoluto, ma f potrebbe raggiungerlo in più punti (es. f costante)",
+      "Vera: il Teorema di Weierstrass garantisce anche l'unicità del minimo",
+      "Vera, se f è anche strettamente monotòna",
+      "Falsa: f potrebbe non avere alcun minimo assoluto"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 512,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L'affermazione \\(f:X\\subseteq\\mathbb{R}\\to\\mathbb{R}\\) discontinua in \\(x_0\\in X \\Rightarrow f\\) non limitata è:",
+    "options": [
+      "Falsa: una funzione può avere una discontinuità (es. un salto) restando comunque limitata, es. la funzione segno",
+      "Vera: ogni discontinuità implica un comportamento illimitato vicino al punto",
+      "Falsa: una funzione discontinua è sempre continua sul resto del dominio, quindi limitata",
+      "Vera: solo le funzioni continue possono essere limitate"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 513,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L\\'affermazione \"se una funzione ha un punto di discontinuità allora non è limitata\" è:",
+    "options": [
+      "Falsa: es. la funzione a gradino (Heaviside) ha una discontinuità in 0 ma resta limitata",
+      "Vera: ogni discontinuità genera un comportamento illimitato",
+      "Falsa: nessuna funzione discontinua può essere limitata su un intervallo",
+      "Vera: per definizione le discontinuità sono sempre di tipo infinito"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 514,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L\\'affermazione \"\\(f:[-3,+\\infty)\\to\\mathbb{R}\\) continua non ha estremi assoluti\" è:",
+    "options": [
+      "Falsa: f potrebbe benissimo avere un minimo o massimo assoluto, es. \\(f(x)=(x+3)^2\\) ha minimo assoluto in \\(x=-3\\)",
+      "Vera: un dominio illimitato impedisce sempre l'esistenza di estremi assoluti",
+      "Falsa: ogni funzione continua su una semiretta ha sia massimo che minimo assoluti",
+      "Vera: per l'assenza del Teorema di Weierstrass su domini non compatti"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 515,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L'affermazione \\(f,g\\in C(\\mathbb{R}) \\Rightarrow f/g\\in C(\\mathbb{R})\\) è:",
+    "options": [
+      "Falsa: se g si annulla in qualche punto, f/g non è nemmeno definita lì, quindi non può essere continua su tutto \\(\\mathbb{R}\\)",
+      "Vera: il quoziente di funzioni continue è sempre continuo dove definito, cioè ovunque",
+      "Falsa: il quoziente di funzioni continue non è mai continuo",
+      "Vera: basta che g non sia mai negativa"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 516,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L'affermazione \\(f\\in C([a,b])\\) strettamente crescente \\(\\Rightarrow f\\) ammette uno e un solo zero in \\((a,b)\\) è:",
+    "options": [
+      "Falsa: senza ipotesi sul segno di f(a) e f(b), f potrebbe non avere alcuno zero (es. f sempre positiva)",
+      "Vera: ogni funzione strettamente crescente e continua ha uno zero",
+      "Vera: per il Teorema degli zeri, sempre applicabile alle funzioni monotone",
+      "Falsa: una funzione strettamente crescente non può mai avere zeri"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 517,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L'affermazione \\(f,g\\in C(\\mathbb{R}) \\Rightarrow \\sqrt{fg}\\in C(\\mathbb{R})\\) è:",
+    "options": [
+      "Falsa: se il prodotto fg è negativo in qualche punto, \\(\\sqrt{fg}\\) non è nemmeno definita lì (es. \\(f=x,\\ g=1\\))",
+      "Vera: il prodotto e la radice di funzioni continue sono sempre continui",
+      "Vera: basta che f e g siano positive, ipotesi implicita nel testo",
+      "Falsa: fg non è mai continua se f e g lo sono"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 518,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L'affermazione \\(f\\in C((a,b)),\\ f\\) prolungabile con continuità in \\(a\\) \\(\\Rightarrow f\\) limitata è:",
+    "options": [
+      "Falsa: f potrebbe non essere prolungabile (o essere illimitata) in un intorno di b, l'altro estremo dell'intervallo",
+      "Vera: prolungare con continuità in un estremo rende automaticamente f limitata su tutto (a,b)",
+      "Vera: per il Teorema di Weierstrass applicato ad (a,b)",
+      "Falsa: nessuna funzione continua su un intervallo aperto è limitata"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 519,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L\\'affermazione \"la funzione \\(f(x)=\\log|x|\\) è prolungabile con continuità in \\(x=0\\)\" è:",
+    "options": [
+      "Falsa: \\(\\lim_{x\\to0}\\log|x|=-\\infty\\) (limite infinito, non un valore finito), quindi f non è prolungabile con continuità in 0",
+      "Vera: basta porre \\(f(0)=0\\)",
+      "Falsa: f non ha nemmeno un limite (né finito né infinito) per \\(x\\to0\\)",
+      "Vera: il limite per \\(x\\to0\\) esiste finito"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 520,
+    "chapter": 5,
+    "topic": "Funzioni continue",
+    "text": "L'affermazione \\(f\\in C(\\mathbb{R}) \\Rightarrow f\\) non ammette estremi assoluti è:",
+    "options": [
+      "Falsa: es. \\(f(x)=1/(1+x^2)\\) è continua su \\(\\mathbb{R}\\) e ha massimo assoluto in \\(x=0\\)",
+      "Vera: il dominio \\(\\mathbb{R}\\) non è compatto, quindi il Teorema di Weierstrass non garantisce mai estremi assoluti",
+      "Falsa: ogni funzione continua su \\(\\mathbb{R}\\) ammette sia massimo che minimo assoluti",
+      "Vera: nessuna funzione su un dominio illimitato può avere estremi assoluti"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 521,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti, monotonia ed eventuali estremi relativi della funzione \\( f(x)=e^{\\frac{(-3)}{x^2-1}} \\).",
+    "options": [
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=+\\infty,\\ \\lim_{x\\to1^+}f=0;\\ \\lim_{x\\to(-1)^-}f=0,\\ \\lim_{x\\to(-1)^+}f=+\\infty);\\ f \\text{ è monotona su tutto il dominio, nessun estremo relativo}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=0;\\ \\text{asintoti verticali in } x=\\pm1;\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e^{3}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1 \\text{ per } x\\to\\pm\\infty;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=+\\infty,\\ \\lim_{x\\to1^+}f=0;\\ \\lim_{x\\to(-1)^-}f=0,\\ \\lim_{x\\to(-1)^+}f=+\\infty);\\ f'(x)=\\dfrac{-2kx}{(x^2-1)^2}e^{\\frac{k}{x^2-1}}\\text{ con } k=-3\\ \\Rightarrow\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e^{3}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^+}f=+\\infty,\\ \\lim_{x\\to1^-}f=0;\\ \\lim_{x\\to(-1)^+}f=0,\\ \\lim_{x\\to(-1)^-}f=+\\infty);\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e^{3}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 522,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, monotonia, convessità e punti di flesso della funzione \\( g(x)=\\log^3(\\frac{1}{2}x) \\).",
+    "options": [
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente crescente;}\\ g \\text{ è convessa su } \\left(0,2\\right), \\text{ concava su } \\left(2,2 e^{2}\\right), \\text{ convessa su } \\left(2 e^{2},+\\infty\\right)\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente crescente, nessun punto di flesso (sempre convessa)}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g'(x)=\\dfrac{3\\log^2(\\frac{1}{2}x)}{x}\\ge0\\ \\forall x>0\\ \\Rightarrow\\ g \\text{ è strettamente crescente su tutto il dominio (nessun estremo relativo);}\\ g \\text{ è concava su } \\left(0,2\\right), \\text{ convessa su } \\left(2,2 e^{2}\\right), \\text{ concava su } \\left(2 e^{2},+\\infty\\right);\\ \\text{due punti di flesso in } x=2 \\text{ e } x=2 e^{2}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente decrescente su tutto il dominio;}\\ \\text{due punti di flesso in } x=2 \\text{ e } x=2 e^{2}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 523,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti, monotonia ed eventuali estremi relativi della funzione \\( f(x)=e^{\\frac{2}{x^2-1}} \\).",
+    "options": [
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=0;\\ \\text{asintoti verticali in } x=\\pm1;\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-2}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^+}f=0,\\ \\lim_{x\\to1^-}f=+\\infty;\\ \\lim_{x\\to(-1)^+}f=+\\infty,\\ \\lim_{x\\to(-1)^-}f=0);\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-2}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=0,\\ \\lim_{x\\to1^+}f=+\\infty;\\ \\lim_{x\\to(-1)^-}f=+\\infty,\\ \\lim_{x\\to(-1)^+}f=0);\\ f \\text{ è monotona su tutto il dominio, nessun estremo relativo}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1 \\text{ per } x\\to\\pm\\infty;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=0,\\ \\lim_{x\\to1^+}f=+\\infty;\\ \\lim_{x\\to(-1)^-}f=+\\infty,\\ \\lim_{x\\to(-1)^+}f=0);\\ f'(x)=\\dfrac{-2kx}{(x^2-1)^2}e^{\\frac{k}{x^2-1}}\\text{ con } k=2\\ \\Rightarrow\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-2}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 524,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, monotonia, convessità e punti di flesso della funzione \\( g(x)=\\log^3(\\frac{1}{3}x) \\).",
+    "options": [
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente decrescente su tutto il dominio;}\\ \\text{due punti di flesso in } x=3 \\text{ e } x=3 e^{2}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente crescente;}\\ g \\text{ è convessa su } \\left(0,3\\right), \\text{ concava su } \\left(3,3 e^{2}\\right), \\text{ convessa su } \\left(3 e^{2},+\\infty\\right)\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g'(x)=\\dfrac{3\\log^2(\\frac{1}{3}x)}{x}\\ge0\\ \\forall x>0\\ \\Rightarrow\\ g \\text{ è strettamente crescente su tutto il dominio (nessun estremo relativo);}\\ g \\text{ è concava su } \\left(0,3\\right), \\text{ convessa su } \\left(3,3 e^{2}\\right), \\text{ concava su } \\left(3 e^{2},+\\infty\\right);\\ \\text{due punti di flesso in } x=3 \\text{ e } x=3 e^{2}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente crescente, nessun punto di flesso (sempre convessa)}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 525,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti, monotonia ed eventuali estremi relativi della funzione \\( f(x)=e^{\\frac{(-2)}{x^2-1}} \\).",
+    "options": [
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=0;\\ \\text{asintoti verticali in } x=\\pm1;\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e^{2}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^+}f=+\\infty,\\ \\lim_{x\\to1^-}f=0;\\ \\lim_{x\\to(-1)^+}f=0,\\ \\lim_{x\\to(-1)^-}f=+\\infty);\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e^{2}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1 \\text{ per } x\\to\\pm\\infty;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=+\\infty,\\ \\lim_{x\\to1^+}f=0;\\ \\lim_{x\\to(-1)^-}f=0,\\ \\lim_{x\\to(-1)^+}f=+\\infty);\\ f'(x)=\\dfrac{-2kx}{(x^2-1)^2}e^{\\frac{k}{x^2-1}}\\text{ con } k=-2\\ \\Rightarrow\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e^{2}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=+\\infty,\\ \\lim_{x\\to1^+}f=0;\\ \\lim_{x\\to(-1)^-}f=0,\\ \\lim_{x\\to(-1)^+}f=+\\infty);\\ f \\text{ è monotona su tutto il dominio, nessun estremo relativo}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 526,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti e monotonia della funzione \\( g(x)=\\dfrac{1}{\\log(4x)} \\).",
+    "options": [
+      "\\(\\text{dominio } \\left(0,\\frac{1}{4}\\right)\\cup\\left(\\frac{1}{4},+\\infty\\right);\\ \\text{asintoto verticale } x=\\frac{1}{4}\\ \\left(\\lim_{x\\to\\left(\\frac{1}{4}\\right)^-}g=-\\infty,\\ \\lim_{x\\to\\left(\\frac{1}{4}\\right)^+}g=+\\infty\\right);\\ \\text{asintoto orizzontale } y=0\\text{ per }x\\to0^+\\text{ e }x\\to+\\infty;\\ g'(x)=\\dfrac{-1}{x\\log^2(4x)}<0\\text{ sempre: } g \\text{ è decrescente su ciascuno dei due intervalli, nessun estremo relativo}\\)",
+      "\\(\\text{dominio } (0,+\\infty)\\setminus\\{\\frac{1}{4}\\};\\ \\text{asintoto verticale } x=\\frac{1}{4};\\ \\text{nessun asintoto orizzontale};\\ g \\text{ ha un minimo relativo in } x=\\frac{1}{4}\\)",
+      "\\(\\text{dominio } \\left(0,\\frac{1}{4}\\right)\\cup\\left(\\frac{1}{4},+\\infty\\right);\\ \\text{asintoto verticale } x=\\frac{1}{4}\\ \\left(\\lim_{x\\to\\left(\\frac{1}{4}\\right)^-}g=+\\infty,\\ \\lim_{x\\to\\left(\\frac{1}{4}\\right)^+}g=-\\infty\\right);\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è decrescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } \\left(0,\\frac{1}{4}\\right)\\cup\\left(\\frac{1}{4},+\\infty\\right);\\ \\text{nessun asintoto verticale};\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è crescente su ciascun ramo}\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 527,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti e monotonia della funzione \\( g(x)=\\dfrac{1}{\\log(\\frac{3}{2}x)} \\).",
+    "options": [
+      "\\(\\text{dominio } \\left(0,\\frac{2}{3}\\right)\\cup\\left(\\frac{2}{3},+\\infty\\right);\\ \\text{asintoto verticale } x=\\frac{2}{3}\\ \\left(\\lim_{x\\to\\left(\\frac{2}{3}\\right)^-}g=+\\infty,\\ \\lim_{x\\to\\left(\\frac{2}{3}\\right)^+}g=-\\infty\\right);\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è decrescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } (0,+\\infty)\\setminus\\{\\frac{2}{3}\\};\\ \\text{asintoto verticale } x=\\frac{2}{3};\\ \\text{nessun asintoto orizzontale};\\ g \\text{ ha un minimo relativo in } x=\\frac{2}{3}\\)",
+      "\\(\\text{dominio } \\left(0,\\frac{2}{3}\\right)\\cup\\left(\\frac{2}{3},+\\infty\\right);\\ \\text{nessun asintoto verticale};\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è crescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } \\left(0,\\frac{2}{3}\\right)\\cup\\left(\\frac{2}{3},+\\infty\\right);\\ \\text{asintoto verticale } x=\\frac{2}{3}\\ \\left(\\lim_{x\\to\\left(\\frac{2}{3}\\right)^-}g=-\\infty,\\ \\lim_{x\\to\\left(\\frac{2}{3}\\right)^+}g=+\\infty\\right);\\ \\text{asintoto orizzontale } y=0\\text{ per }x\\to0^+\\text{ e }x\\to+\\infty;\\ g'(x)=\\dfrac{-1}{x\\log^2(\\frac{3}{2}x)}<0\\text{ sempre: } g \\text{ è decrescente su ciascuno dei due intervalli, nessun estremo relativo}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 528,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti e monotonia della funzione \\( g(x)=\\dfrac{1}{\\log(\\frac{1}{2}x)} \\).",
+    "options": [
+      "\\(\\text{dominio } (0,+\\infty)\\setminus\\{2\\};\\ \\text{asintoto verticale } x=2;\\ \\text{nessun asintoto orizzontale};\\ g \\text{ ha un minimo relativo in } x=2\\)",
+      "\\(\\text{dominio } \\left(0,2\\right)\\cup\\left(2,+\\infty\\right);\\ \\text{asintoto verticale } x=2\\ \\left(\\lim_{x\\to\\left(2\\right)^-}g=+\\infty,\\ \\lim_{x\\to\\left(2\\right)^+}g=-\\infty\\right);\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è decrescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } \\left(0,2\\right)\\cup\\left(2,+\\infty\\right);\\ \\text{nessun asintoto verticale};\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è crescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } \\left(0,2\\right)\\cup\\left(2,+\\infty\\right);\\ \\text{asintoto verticale } x=2\\ \\left(\\lim_{x\\to\\left(2\\right)^-}g=-\\infty,\\ \\lim_{x\\to\\left(2\\right)^+}g=+\\infty\\right);\\ \\text{asintoto orizzontale } y=0\\text{ per }x\\to0^+\\text{ e }x\\to+\\infty;\\ g'(x)=\\dfrac{-1}{x\\log^2(\\frac{1}{2}x)}<0\\text{ sempre: } g \\text{ è decrescente su ciascuno dei due intervalli, nessun estremo relativo}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 529,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti e monotonia della funzione \\( g(x)=\\dfrac{1}{\\log(x)} \\).",
+    "options": [
+      "\\(\\text{dominio } \\left(0,1\\right)\\cup\\left(1,+\\infty\\right);\\ \\text{nessun asintoto verticale};\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è crescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } (0,+\\infty)\\setminus\\{1\\};\\ \\text{asintoto verticale } x=1;\\ \\text{nessun asintoto orizzontale};\\ g \\text{ ha un minimo relativo in } x=1\\)",
+      "\\(\\text{dominio } \\left(0,1\\right)\\cup\\left(1,+\\infty\\right);\\ \\text{asintoto verticale } x=1\\ \\left(\\lim_{x\\to\\left(1\\right)^-}g=+\\infty,\\ \\lim_{x\\to\\left(1\\right)^+}g=-\\infty\\right);\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è decrescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } \\left(0,1\\right)\\cup\\left(1,+\\infty\\right);\\ \\text{asintoto verticale } x=1\\ \\left(\\lim_{x\\to\\left(1\\right)^-}g=-\\infty,\\ \\lim_{x\\to\\left(1\\right)^+}g=+\\infty\\right);\\ \\text{asintoto orizzontale } y=0\\text{ per }x\\to0^+\\text{ e }x\\to+\\infty;\\ g'(x)=\\dfrac{-1}{x\\log^2(x)}<0\\text{ sempre: } g \\text{ è decrescente su ciascuno dei due intervalli, nessun estremo relativo}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 530,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Il polinomio di Taylor di grado 3 in \\(x_0=0\\) di \\(f(x)=e^x+\\sin x\\) è \\(1+2x+x^2-\\dfrac{x^3}{3}\\): questa affermazione è:",
+    "options": [
+      "Falsa: il polinomio corretto non ha alcun termine quadratico",
+      "Falsa: sviluppando \\(e^x=1+x+x^2/2+x^3/6+\\dots\\) e \\(\\sin x=x-x^3/6+\\dots\\) e sommando si ottiene \\(1+2x+x^2/2+0\\cdot x^3\\) (il termine cubico si annulla esattamente, e quello quadratico è \\(x^2/2\\), non \\(x^2\\))",
+      "Vera: sommando le due serie termine a termine si ottiene esattamente quel polinomio",
+      "Vera, a meno del resto di Peano"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 531,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, monotonia, convessità e punti di flesso della funzione \\( g(x)=\\log^3(3x) \\).",
+    "options": [
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente decrescente su tutto il dominio;}\\ \\text{due punti di flesso in } x=\\frac{1}{3} \\text{ e } x=\\frac{e^{2}}{3}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente crescente;}\\ g \\text{ è convessa su } \\left(0,\\frac{1}{3}\\right), \\text{ concava su } \\left(\\frac{1}{3},\\frac{e^{2}}{3}\\right), \\text{ convessa su } \\left(\\frac{e^{2}}{3},+\\infty\\right)\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente crescente, nessun punto di flesso (sempre convessa)}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g'(x)=\\dfrac{3\\log^2(3x)}{x}\\ge0\\ \\forall x>0\\ \\Rightarrow\\ g \\text{ è strettamente crescente su tutto il dominio (nessun estremo relativo);}\\ g \\text{ è concava su } \\left(0,\\frac{1}{3}\\right), \\text{ convessa su } \\left(\\frac{1}{3},\\frac{e^{2}}{3}\\right), \\text{ concava su } \\left(\\frac{e^{2}}{3},+\\infty\\right);\\ \\text{due punti di flesso in } x=\\frac{1}{3} \\text{ e } x=\\frac{e^{2}}{3}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 532,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti, monotonia ed eventuali estremi relativi della funzione \\( f(x)=e^{\\frac{3}{x^2-1}} \\).",
+    "options": [
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=0;\\ \\text{asintoti verticali in } x=\\pm1;\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-3}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1 \\text{ per } x\\to\\pm\\infty;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=0,\\ \\lim_{x\\to1^+}f=+\\infty;\\ \\lim_{x\\to(-1)^-}f=+\\infty,\\ \\lim_{x\\to(-1)^+}f=0);\\ f'(x)=\\dfrac{-2kx}{(x^2-1)^2}e^{\\frac{k}{x^2-1}}\\text{ con } k=3\\ \\Rightarrow\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-3}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=0,\\ \\lim_{x\\to1^+}f=+\\infty;\\ \\lim_{x\\to(-1)^-}f=+\\infty,\\ \\lim_{x\\to(-1)^+}f=0);\\ f \\text{ è monotona su tutto il dominio, nessun estremo relativo}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^+}f=0,\\ \\lim_{x\\to1^-}f=+\\infty;\\ \\lim_{x\\to(-1)^+}f=+\\infty,\\ \\lim_{x\\to(-1)^-}f=0);\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-3}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 533,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti e monotonia della funzione \\( g(x)=\\dfrac{1}{\\log(5x)} \\).",
+    "options": [
+      "\\(\\text{dominio } \\left(0,\\frac{1}{5}\\right)\\cup\\left(\\frac{1}{5},+\\infty\\right);\\ \\text{asintoto verticale } x=\\frac{1}{5}\\ \\left(\\lim_{x\\to\\left(\\frac{1}{5}\\right)^-}g=+\\infty,\\ \\lim_{x\\to\\left(\\frac{1}{5}\\right)^+}g=-\\infty\\right);\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è decrescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } (0,+\\infty)\\setminus\\{\\frac{1}{5}\\};\\ \\text{asintoto verticale } x=\\frac{1}{5};\\ \\text{nessun asintoto orizzontale};\\ g \\text{ ha un minimo relativo in } x=\\frac{1}{5}\\)",
+      "\\(\\text{dominio } \\left(0,\\frac{1}{5}\\right)\\cup\\left(\\frac{1}{5},+\\infty\\right);\\ \\text{nessun asintoto verticale};\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è crescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } \\left(0,\\frac{1}{5}\\right)\\cup\\left(\\frac{1}{5},+\\infty\\right);\\ \\text{asintoto verticale } x=\\frac{1}{5}\\ \\left(\\lim_{x\\to\\left(\\frac{1}{5}\\right)^-}g=-\\infty,\\ \\lim_{x\\to\\left(\\frac{1}{5}\\right)^+}g=+\\infty\\right);\\ \\text{asintoto orizzontale } y=0\\text{ per }x\\to0^+\\text{ e }x\\to+\\infty;\\ g'(x)=\\dfrac{-1}{x\\log^2(5x)}<0\\text{ sempre: } g \\text{ è decrescente su ciascuno dei due intervalli, nessun estremo relativo}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 534,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti e monotonia della funzione \\( g(x)=\\dfrac{1}{\\log(\\frac{1}{3}x)} \\).",
+    "options": [
+      "\\(\\text{dominio } \\left(0,3\\right)\\cup\\left(3,+\\infty\\right);\\ \\text{nessun asintoto verticale};\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è crescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } (0,+\\infty)\\setminus\\{3\\};\\ \\text{asintoto verticale } x=3;\\ \\text{nessun asintoto orizzontale};\\ g \\text{ ha un minimo relativo in } x=3\\)",
+      "\\(\\text{dominio } \\left(0,3\\right)\\cup\\left(3,+\\infty\\right);\\ \\text{asintoto verticale } x=3\\ \\left(\\lim_{x\\to\\left(3\\right)^-}g=+\\infty,\\ \\lim_{x\\to\\left(3\\right)^+}g=-\\infty\\right);\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è decrescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } \\left(0,3\\right)\\cup\\left(3,+\\infty\\right);\\ \\text{asintoto verticale } x=3\\ \\left(\\lim_{x\\to\\left(3\\right)^-}g=-\\infty,\\ \\lim_{x\\to\\left(3\\right)^+}g=+\\infty\\right);\\ \\text{asintoto orizzontale } y=0\\text{ per }x\\to0^+\\text{ e }x\\to+\\infty;\\ g'(x)=\\dfrac{-1}{x\\log^2(\\frac{1}{3}x)}<0\\text{ sempre: } g \\text{ è decrescente su ciascuno dei due intervalli, nessun estremo relativo}\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 535,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, monotonia, convessità e punti di flesso della funzione \\( g(x)=\\log^3(x) \\).",
+    "options": [
+      "\\(\\text{dominio } (0,+\\infty);\\ g'(x)=\\dfrac{3\\log^2(x)}{x}\\ge0\\ \\forall x>0\\ \\Rightarrow\\ g \\text{ è strettamente crescente su tutto il dominio (nessun estremo relativo);}\\ g \\text{ è concava su } \\left(0,1\\right), \\text{ convessa su } \\left(1,e^{2}\\right), \\text{ concava su } \\left(e^{2},+\\infty\\right);\\ \\text{due punti di flesso in } x=1 \\text{ e } x=e^{2}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente crescente, nessun punto di flesso (sempre convessa)}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente decrescente su tutto il dominio;}\\ \\text{due punti di flesso in } x=1 \\text{ e } x=e^{2}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente crescente;}\\ g \\text{ è convessa su } \\left(0,1\\right), \\text{ concava su } \\left(1,e^{2}\\right), \\text{ convessa su } \\left(e^{2},+\\infty\\right)\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 536,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Sia \\(k(x)=x^2\\sin(1/x)\\) per \\(x\\neq0\\), \\(k(0)=0\\). L\\'affermazione \"il Teorema di Rolle è applicabile in \\([-1/\\pi,1/\\pi]\\) a k\" è:",
+    "options": [
+      "Vera, ma solo perché k è dispari",
+      "Vera: k è continua su \\([-1/\\pi,1/\\pi]\\) (incluso in 0, dove il limite è 0), derivabile su \\((-1/\\pi,1/\\pi)\\) (anche in 0, con \\(k'(0)=0\\)), e \\(k(-1/\\pi)=k(1/\\pi)=0\\): tutte le ipotesi sono verificate",
+      "Falsa: k non è derivabile in \\(x=0\\)",
+      "Falsa: \\(k(-1/\\pi)\\neq k(1/\\pi)\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 537,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti, monotonia ed eventuali estremi relativi della funzione \\( f(x)=e^{\\frac{4}{x^2-1}} \\).",
+    "options": [
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=0;\\ \\text{asintoti verticali in } x=\\pm1;\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-4}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^+}f=0,\\ \\lim_{x\\to1^-}f=+\\infty;\\ \\lim_{x\\to(-1)^+}f=+\\infty,\\ \\lim_{x\\to(-1)^-}f=0);\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-4}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1 \\text{ per } x\\to\\pm\\infty;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=0,\\ \\lim_{x\\to1^+}f=+\\infty;\\ \\lim_{x\\to(-1)^-}f=+\\infty,\\ \\lim_{x\\to(-1)^+}f=0);\\ f'(x)=\\dfrac{-2kx}{(x^2-1)^2}e^{\\frac{k}{x^2-1}}\\text{ con } k=4\\ \\Rightarrow\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-4}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=0,\\ \\lim_{x\\to1^+}f=+\\infty;\\ \\lim_{x\\to(-1)^-}f=+\\infty,\\ \\lim_{x\\to(-1)^+}f=0);\\ f \\text{ è monotona su tutto il dominio, nessun estremo relativo}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 538,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti e monotonia della funzione \\( g(x)=\\dfrac{1}{\\log(2x)} \\).",
+    "options": [
+      "\\(\\text{dominio } \\left(0,\\frac{1}{2}\\right)\\cup\\left(\\frac{1}{2},+\\infty\\right);\\ \\text{asintoto verticale } x=\\frac{1}{2}\\ \\left(\\lim_{x\\to\\left(\\frac{1}{2}\\right)^-}g=+\\infty,\\ \\lim_{x\\to\\left(\\frac{1}{2}\\right)^+}g=-\\infty\\right);\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è decrescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } (0,+\\infty)\\setminus\\{\\frac{1}{2}\\};\\ \\text{asintoto verticale } x=\\frac{1}{2};\\ \\text{nessun asintoto orizzontale};\\ g \\text{ ha un minimo relativo in } x=\\frac{1}{2}\\)",
+      "\\(\\text{dominio } \\left(0,\\frac{1}{2}\\right)\\cup\\left(\\frac{1}{2},+\\infty\\right);\\ \\text{asintoto verticale } x=\\frac{1}{2}\\ \\left(\\lim_{x\\to\\left(\\frac{1}{2}\\right)^-}g=-\\infty,\\ \\lim_{x\\to\\left(\\frac{1}{2}\\right)^+}g=+\\infty\\right);\\ \\text{asintoto orizzontale } y=0\\text{ per }x\\to0^+\\text{ e }x\\to+\\infty;\\ g'(x)=\\dfrac{-1}{x\\log^2(2x)}<0\\text{ sempre: } g \\text{ è decrescente su ciascuno dei due intervalli, nessun estremo relativo}\\)",
+      "\\(\\text{dominio } \\left(0,\\frac{1}{2}\\right)\\cup\\left(\\frac{1}{2},+\\infty\\right);\\ \\text{nessun asintoto verticale};\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è crescente su ciascun ramo}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 539,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Il polinomio di Taylor di grado 2 di \\(f(x)=\\arcsin x\\) di punto iniziale \\(x_0=\\sqrt3/2\\) è \\(p_2(x)=\\pi/3+2x\\): questa affermazione è:",
+    "options": [
+      "Falsa: il polinomio di Taylor di \\(\\arcsin\\) ha solo potenze dispari",
+      "Falsa: sviluppando correttamente si ottiene \\(p_2(x)=\\pi/3+2(x-\\sqrt3/2)+2\\sqrt3(x-\\sqrt3/2)^2\\), diverso da \\(\\pi/3+2x\\) (manca lo sviluppo attorno a \\(x_0\\) e il termine quadratico)",
+      "Vera: le derivate di \\(\\arcsin\\) in \\(x_0=\\sqrt3/2\\) danno esattamente quei coefficienti",
+      "Vera, il termine quadratico è nullo per \\(\\arcsin\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 540,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "L'affermazione \\(f(x)=|x+1|(x+1)\\) non è derivabile in \\(x=-1\\) è:",
+    "options": [
+      "Falsa: f non è nemmeno continua in \\(x=-1\\)",
+      "Falsa: f(x) equivale a \\(\\operatorname{sign}(x+1)(x+1)^2\\), che è derivabile anche in \\(x=-1\\) con \\(f'(-1)=0\\) (entrambe le branche hanno derivata nulla lì)",
+      "Vera: il valore assoluto rende sempre non derivabile nel punto critico",
+      "Vera: c'è un punto angoloso in \\(x=-1\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 541,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "L'affermazione \\(F:(2,5)\\cup(6,7)\\to\\mathbb{R}\\) derivabile, \\(F'(x)=0\\) su \\((2,5)\\cup(6,7)\\) \\(\\Rightarrow F\\) costante su \\((2,5)\\cup(6,7)\\) è:",
+    "options": [
+      "Vera, per il criterio di monotonia applicato globalmente",
+      "Falsa: il dominio è sconnesso (unione di due intervalli disgiunti); F è costante su ciascun intervallo separatamente, ma le due costanti possono essere diverse",
+      "Vera: derivata nulla implica sempre funzione costante, indipendentemente dal dominio",
+      "Falsa: F'=0 non implica nulla sulla monotonia di F"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 542,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, monotonia, convessità e punti di flesso della funzione \\( g(x)=\\log^3(2x) \\).",
+    "options": [
+      "\\(\\text{dominio } (0,+\\infty);\\ g'(x)=\\dfrac{3\\log^2(2x)}{x}\\ge0\\ \\forall x>0\\ \\Rightarrow\\ g \\text{ è strettamente crescente su tutto il dominio (nessun estremo relativo);}\\ g \\text{ è concava su } \\left(0,\\frac{1}{2}\\right), \\text{ convessa su } \\left(\\frac{1}{2},\\frac{e^{2}}{2}\\right), \\text{ concava su } \\left(\\frac{e^{2}}{2},+\\infty\\right);\\ \\text{due punti di flesso in } x=\\frac{1}{2} \\text{ e } x=\\frac{e^{2}}{2}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente decrescente su tutto il dominio;}\\ \\text{due punti di flesso in } x=\\frac{1}{2} \\text{ e } x=\\frac{e^{2}}{2}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente crescente, nessun punto di flesso (sempre convessa)}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente crescente;}\\ g \\text{ è convessa su } \\left(0,\\frac{1}{2}\\right), \\text{ concava su } \\left(\\frac{1}{2},\\frac{e^{2}}{2}\\right), \\text{ convessa su } \\left(\\frac{e^{2}}{2},+\\infty\\right)\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 543,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Sia D l\\'insieme di definizione di \\(f(x) = x\\log^3 x\\). L\\'affermazione \"\\(D_r D = \\mathbb{R}\\)\" (dove \\(D_r\\) indica il derivato di D) è:",
+    "options": [
+      "Vera: il derivato di un insieme illimitato è sempre \\(\\mathbb{R}\\)",
+      "Falsa: D=(0,+∞), il suo derivato è \\([0,+\\infty)\\), non tutto \\(\\mathbb{R}\\) (i numeri negativi non sono di accumulazione per D)",
+      "Vera: ogni punto di \\(\\mathbb{R}\\) è di accumulazione per (0,+∞)",
+      "Falsa: D non ha punti di accumulazione"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 544,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti, monotonia ed eventuali estremi relativi della funzione \\( f(x)=e^{\\frac{(-1)}{x^2-1}} \\).",
+    "options": [
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^+}f=+\\infty,\\ \\lim_{x\\to1^-}f=0;\\ \\lim_{x\\to(-1)^+}f=0,\\ \\lim_{x\\to(-1)^-}f=+\\infty);\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1 \\text{ per } x\\to\\pm\\infty;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=+\\infty,\\ \\lim_{x\\to1^+}f=0;\\ \\lim_{x\\to(-1)^-}f=0,\\ \\lim_{x\\to(-1)^+}f=+\\infty);\\ f'(x)=\\dfrac{-2kx}{(x^2-1)^2}e^{\\frac{k}{x^2-1}}\\text{ con } k=-1\\ \\Rightarrow\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=0;\\ \\text{asintoti verticali in } x=\\pm1;\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=+\\infty,\\ \\lim_{x\\to1^+}f=0;\\ \\lim_{x\\to(-1)^-}f=0,\\ \\lim_{x\\to(-1)^+}f=+\\infty);\\ f \\text{ è monotona su tutto il dominio, nessun estremo relativo}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 545,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti, monotonia ed eventuali estremi relativi della funzione \\( f(x)=e^{\\frac{(-4)}{x^2-1}} \\).",
+    "options": [
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=0;\\ \\text{asintoti verticali in } x=\\pm1;\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e^{4}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=+\\infty,\\ \\lim_{x\\to1^+}f=0;\\ \\lim_{x\\to(-1)^-}f=0,\\ \\lim_{x\\to(-1)^+}f=+\\infty);\\ f \\text{ è monotona su tutto il dominio, nessun estremo relativo}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1 \\text{ per } x\\to\\pm\\infty;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=+\\infty,\\ \\lim_{x\\to1^+}f=0;\\ \\lim_{x\\to(-1)^-}f=0,\\ \\lim_{x\\to(-1)^+}f=+\\infty);\\ f'(x)=\\dfrac{-2kx}{(x^2-1)^2}e^{\\frac{k}{x^2-1}}\\text{ con } k=-4\\ \\Rightarrow\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e^{4}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^+}f=+\\infty,\\ \\lim_{x\\to1^-}f=0;\\ \\lim_{x\\to(-1)^+}f=0,\\ \\lim_{x\\to(-1)^-}f=+\\infty);\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e^{4}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 546,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, monotonia, convessità e punti di flesso della funzione \\( g(x)=\\log^3(4x) \\).",
+    "options": [
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente decrescente su tutto il dominio;}\\ \\text{due punti di flesso in } x=\\frac{1}{4} \\text{ e } x=\\frac{e^{2}}{4}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente crescente, nessun punto di flesso (sempre convessa)}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g'(x)=\\dfrac{3\\log^2(4x)}{x}\\ge0\\ \\forall x>0\\ \\Rightarrow\\ g \\text{ è strettamente crescente su tutto il dominio (nessun estremo relativo);}\\ g \\text{ è concava su } \\left(0,\\frac{1}{4}\\right), \\text{ convessa su } \\left(\\frac{1}{4},\\frac{e^{2}}{4}\\right), \\text{ concava su } \\left(\\frac{e^{2}}{4},+\\infty\\right);\\ \\text{due punti di flesso in } x=\\frac{1}{4} \\text{ e } x=\\frac{e^{2}}{4}\\)",
+      "\\(\\text{dominio } (0,+\\infty);\\ g \\text{ è strettamente crescente;}\\ g \\text{ è convessa su } \\left(0,\\frac{1}{4}\\right), \\text{ concava su } \\left(\\frac{1}{4},\\frac{e^{2}}{4}\\right), \\text{ convessa su } \\left(\\frac{e^{2}}{4},+\\infty\\right)\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 547,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "L\\'affermazione \"l\\'equazione \\(\\log x=1+1/x\\), \\(x\\in(0,+\\infty)\\), ha due soluzioni reali\" è:",
+    "options": [
+      "Falsa: l'equazione non ha alcuna soluzione reale",
+      "Falsa: posto \\(h(x)=\\log x-1-1/x\\), si ha \\(h'(x)=1/x+1/x^2>0\\) sempre: h è strettamente crescente, quindi ha al più (e in questo caso esattamente) una soluzione",
+      "Vera: un'equazione logaritmica ha sempre più soluzioni",
+      "Vera: per il Teorema degli zeri applicato due volte"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 548,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti, monotonia ed eventuali estremi relativi della funzione \\( f(x)=e^{\\frac{(-5)}{x^2-1}} \\).",
+    "options": [
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^+}f=+\\infty,\\ \\lim_{x\\to1^-}f=0;\\ \\lim_{x\\to(-1)^+}f=0,\\ \\lim_{x\\to(-1)^-}f=+\\infty);\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e^{5}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=0;\\ \\text{asintoti verticali in } x=\\pm1;\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e^{5}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1 \\text{ per } x\\to\\pm\\infty;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=+\\infty,\\ \\lim_{x\\to1^+}f=0;\\ \\lim_{x\\to(-1)^-}f=0,\\ \\lim_{x\\to(-1)^+}f=+\\infty);\\ f'(x)=\\dfrac{-2kx}{(x^2-1)^2}e^{\\frac{k}{x^2-1}}\\text{ con } k=-5\\ \\Rightarrow\\ x=0 \\text{ è punto di minimo relativo, } f(0)=e^{5}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=+\\infty,\\ \\lim_{x\\to1^+}f=0;\\ \\lim_{x\\to(-1)^-}f=0,\\ \\lim_{x\\to(-1)^+}f=+\\infty);\\ f \\text{ è monotona su tutto il dominio, nessun estremo relativo}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 549,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti, monotonia ed eventuali estremi relativi della funzione \\( f(x)=e^{\\frac{5}{x^2-1}} \\).",
+    "options": [
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^+}f=0,\\ \\lim_{x\\to1^-}f=+\\infty;\\ \\lim_{x\\to(-1)^+}f=+\\infty,\\ \\lim_{x\\to(-1)^-}f=0);\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-5}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=0;\\ \\text{asintoti verticali in } x=\\pm1;\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-5}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1 \\text{ per } x\\to\\pm\\infty;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=0,\\ \\lim_{x\\to1^+}f=+\\infty;\\ \\lim_{x\\to(-1)^-}f=+\\infty,\\ \\lim_{x\\to(-1)^+}f=0);\\ f'(x)=\\dfrac{-2kx}{(x^2-1)^2}e^{\\frac{k}{x^2-1}}\\text{ con } k=5\\ \\Rightarrow\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-5}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=0,\\ \\lim_{x\\to1^+}f=+\\infty;\\ \\lim_{x\\to(-1)^-}f=+\\infty,\\ \\lim_{x\\to(-1)^+}f=0);\\ f \\text{ è monotona su tutto il dominio, nessun estremo relativo}\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 550,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti e monotonia della funzione \\( g(x)=\\dfrac{1}{\\log(3x)} \\).",
+    "options": [
+      "\\(\\text{dominio } \\left(0,\\frac{1}{3}\\right)\\cup\\left(\\frac{1}{3},+\\infty\\right);\\ \\text{nessun asintoto verticale};\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è crescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } \\left(0,\\frac{1}{3}\\right)\\cup\\left(\\frac{1}{3},+\\infty\\right);\\ \\text{asintoto verticale } x=\\frac{1}{3}\\ \\left(\\lim_{x\\to\\left(\\frac{1}{3}\\right)^-}g=-\\infty,\\ \\lim_{x\\to\\left(\\frac{1}{3}\\right)^+}g=+\\infty\\right);\\ \\text{asintoto orizzontale } y=0\\text{ per }x\\to0^+\\text{ e }x\\to+\\infty;\\ g'(x)=\\dfrac{-1}{x\\log^2(3x)}<0\\text{ sempre: } g \\text{ è decrescente su ciascuno dei due intervalli, nessun estremo relativo}\\)",
+      "\\(\\text{dominio } \\left(0,\\frac{1}{3}\\right)\\cup\\left(\\frac{1}{3},+\\infty\\right);\\ \\text{asintoto verticale } x=\\frac{1}{3}\\ \\left(\\lim_{x\\to\\left(\\frac{1}{3}\\right)^-}g=+\\infty,\\ \\lim_{x\\to\\left(\\frac{1}{3}\\right)^+}g=-\\infty\\right);\\ \\text{asintoto orizzontale } y=0;\\ g \\text{ è decrescente su ciascun ramo}\\)",
+      "\\(\\text{dominio } (0,+\\infty)\\setminus\\{\\frac{1}{3}\\};\\ \\text{asintoto verticale } x=\\frac{1}{3};\\ \\text{nessun asintoto orizzontale};\\ g \\text{ ha un minimo relativo in } x=\\frac{1}{3}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 551,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Il polinomio di Taylor di grado 3 in \\(x_0=1\\) della funzione \\(f(x)=1/x\\) è \\(1+(x-1)^2+(x-1)^3\\): questa affermazione è:",
+    "options": [
+      "Falsa: il polinomio di Taylor di \\(1/x\\) ha solo termini pari",
+      "Falsa: il polinomio corretto è \\(1-(x-1)+(x-1)^2-(x-1)^3\\) (manca il termine lineare \\(-(x-1)\\) e il segno del termine cubico è errato)",
+      "Vera: le derivate di \\(1/x\\) in \\(x_0=1\\) danno esattamente quei coefficienti",
+      "Vera, a meno del resto di Peano"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 552,
+    "chapter": 6,
+    "topic": "Calcolo differenziale",
+    "text": "Studiare dominio, asintoti, monotonia ed eventuali estremi relativi della funzione \\( f(x)=e^{\\frac{1}{x^2-1}} \\).",
+    "options": [
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=0;\\ \\text{asintoti verticali in } x=\\pm1;\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-1}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1 \\text{ per } x\\to\\pm\\infty;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=0,\\ \\lim_{x\\to1^+}f=+\\infty;\\ \\lim_{x\\to(-1)^-}f=+\\infty,\\ \\lim_{x\\to(-1)^+}f=0);\\ f'(x)=\\dfrac{-2kx}{(x^2-1)^2}e^{\\frac{k}{x^2-1}}\\text{ con } k=1\\ \\Rightarrow\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-1}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^-}f=0,\\ \\lim_{x\\to1^+}f=+\\infty;\\ \\lim_{x\\to(-1)^-}f=+\\infty,\\ \\lim_{x\\to(-1)^+}f=0);\\ f \\text{ è monotona su tutto il dominio, nessun estremo relativo}\\)",
+      "\\(\\text{dominio } \\mathbb{R}\\setminus\\{-1,1\\};\\ \\text{asintoto orizzontale } y=1;\\ \\text{asintoti verticali in } x=\\pm1\\ (\\lim_{x\\to1^+}f=0,\\ \\lim_{x\\to1^-}f=+\\infty;\\ \\lim_{x\\to(-1)^+}f=+\\infty,\\ \\lim_{x\\to(-1)^-}f=0);\\ x=0 \\text{ è punto di massimo relativo, } f(0)=e^{-1}\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 553,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int e^{x}\\sin(x)\\,dx \\).",
+    "options": [
+      "\\(\\frac{\\sqrt{2} e^{x} \\sin{\\left(x + \\frac{\\pi}{4} \\right)}}{2} + C\\)",
+      "\\(- \\sqrt{2} e^{x} \\cos{\\left(x + \\frac{\\pi}{4} \\right)} + C\\)",
+      "\\(\\frac{\\sqrt{2} e^{x} \\cos{\\left(x + \\frac{\\pi}{4} \\right)}}{2} + C\\)",
+      "\\(- \\frac{\\sqrt{2} e^{x} \\cos{\\left(x + \\frac{\\pi}{4} \\right)}}{2} + C\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 554,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{e^{x}}{\\sqrt{e^{x}+2}}\\sin\\!\\left(\\sqrt{e^{x}+2}\\right)dx \\).",
+    "options": [
+      "\\(- 2 \\cos{\\left(\\sqrt{e^{x} + 2} \\right)} + C\\)",
+      "\\(2 \\cos{\\left(\\sqrt{e^{x} + 2} \\right)} + C\\)",
+      "\\(- \\cos{\\left(\\sqrt{e^{x} + 2} \\right)} + C\\)",
+      "\\(2 \\sin{\\left(\\sqrt{e^{x} + 2} \\right)} + C\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 555,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{x\\ln^3(4x^2+1)}{2+8x^2}\\,dx \\).",
+    "options": [
+      "\\(\\frac{\\ln{\\left(4 x^{2} + 1 \\right)}^{4}}{64} + C\\)",
+      "\\(- \\frac{\\ln{\\left(4 x^{2} + 1 \\right)}^{4}}{64} + C\\)",
+      "\\(\\frac{\\ln{\\left(4 x^{2} + 1 \\right)}^{3}}{64} + C\\)",
+      "\\(\\frac{\\ln{\\left(4 x^{2} + 1 \\right)}^{4}}{16} + C\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 556,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int e^{-x}\\sin(x)\\,dx \\).",
+    "options": [
+      "\\(- \\sqrt{2} e^{- x} \\sin{\\left(x + \\frac{\\pi}{4} \\right)} + C\\)",
+      "\\(\\frac{\\sqrt{2} e^{- x} \\sin{\\left(x + \\frac{\\pi}{4} \\right)}}{2} + C\\)",
+      "\\(- \\frac{\\sqrt{2} e^{- x} \\sin{\\left(x + \\frac{\\pi}{4} \\right)}}{2} + C\\)",
+      "\\(- \\frac{\\sqrt{2} e^{- x} \\cos{\\left(x + \\frac{\\pi}{4} \\right)}}{2} + C\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 557,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{x\\arcsin(\\frac{1}{4}x^2)}{\\sqrt{1-\\frac{1}{16}x^4}}\\,dx \\) (nel dominio di definizione).",
+    "options": [
+      "\\(- \\operatorname{asin}^{2}{\\left(\\frac{x^{2}}{4} \\right)} + C\\)",
+      "\\(\\operatorname{asin}^{2}{\\left(\\frac{x^{2}}{4} \\right)} + C\\)",
+      "\\(\\frac{\\operatorname{asin}^{2}{\\left(\\frac{x^{2}}{4} \\right)}}{2} + C\\)",
+      "\\(2 \\operatorname{asin}{\\left(\\frac{x^{2}}{4} \\right)} + C\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 558,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{x\\ln^3(x^2+1)}{1+x^2}\\,dx \\).",
+    "options": [
+      "\\(\\frac{\\ln{\\left(x^{2} + 1 \\right)}^{4}}{2} + C\\)",
+      "\\(- \\frac{\\ln{\\left(x^{2} + 1 \\right)}^{4}}{8} + C\\)",
+      "\\(\\frac{\\ln{\\left(x^{2} + 1 \\right)}^{3}}{8} + C\\)",
+      "\\(\\frac{\\ln{\\left(x^{2} + 1 \\right)}^{4}}{8} + C\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 559,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{x-4}{-x+6}\\,dx \\).",
+    "options": [
+      "\\(- \\frac{x}{2} - \\ln{\\left(x - 6 \\right)} + C\\)",
+      "\\(x + 2 \\ln{\\left(x - 6 \\right)} + C\\)",
+      "\\(- x - 2 \\ln{\\left(x - 6 \\right)} + C\\)",
+      "\\(- x + C\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 560,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int e^{x}\\sin(3x)\\,dx \\).",
+    "options": [
+      "\\(- \\frac{\\left(\\sin{\\left(3 x \\right)} - 3 \\cos{\\left(3 x \\right)}\\right) e^{x}}{10} + C\\)",
+      "\\(\\frac{\\left(3 \\sin{\\left(3 x \\right)} + \\cos{\\left(3 x \\right)}\\right) e^{x}}{10} + C\\)",
+      "\\(\\frac{\\left(\\sin{\\left(3 x \\right)} - 3 \\cos{\\left(3 x \\right)}\\right) e^{x}}{5} + C\\)",
+      "\\(\\frac{\\left(\\sin{\\left(3 x \\right)} - 3 \\cos{\\left(3 x \\right)}\\right) e^{x}}{10} + C\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 561,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{-x-1}{2x-4}\\,dx \\).",
+    "options": [
+      "\\(- \\frac{x}{4} - \\frac{3 \\ln{\\left(x - 2 \\right)}}{4} + C\\)",
+      "\\(\\frac{x}{2} + \\frac{3 \\ln{\\left(x - 2 \\right)}}{2} + C\\)",
+      "\\(- \\frac{x}{2} - \\frac{3 \\ln{\\left(x - 2 \\right)}}{2} + C\\)",
+      "\\(- \\frac{x}{2} + C\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 562,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{2x-3}{2x+1}\\,dx \\).",
+    "options": [
+      "\\(x + C\\)",
+      "\\(- x + 2 \\ln{\\left(2 x + 1 \\right)} + C\\)",
+      "\\(\\frac{x}{2} - \\ln{\\left(2 x + 1 \\right)} + C\\)",
+      "\\(x - 2 \\ln{\\left(2 x + 1 \\right)} + C\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 563,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int e^{x}\\tan(e^{x})\\,dx \\).",
+    "options": [
+      "\\(\\ln{\\left(\\cos{\\left(e^{x} \\right)} \\right)} + C\\)",
+      "\\(\\ln{\\left(\\sin{\\left(e^{x} \\right)} \\right)} + C\\)",
+      "\\(- 2 \\ln{\\left(\\cos{\\left(e^{x} \\right)} \\right)} + C\\)",
+      "\\(- \\ln{\\left(\\cos{\\left(e^{x} \\right)} \\right)} + C\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 564,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{\\ln x}{x\\left(3+\\ln^2 x\\right)}\\,dx \\) (per \\(x>0\\)).",
+    "options": [
+      "\\(\\frac{\\ln{\\left(x \\right)}^{2}}{2} + C\\)",
+      "\\(\\frac{\\ln{\\left(\\ln{\\left(x \\right)}^{2} + 3 \\right)}}{2} + C\\)",
+      "\\(- \\frac{\\ln{\\left(\\ln{\\left(x \\right)}^{2} + 3 \\right)}}{2} + C\\)",
+      "\\(\\ln{\\left(\\ln{\\left(x \\right)}^{2} + 3 \\right)} + C\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 565,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "L\\'affermazione \"\\(g\\in C(\\mathbb{R}) \\Rightarrow h(x)=\\displaystyle\\int_2^x g(t)\\,dt\\in C(\\mathbb{R})\\)\" è:",
+    "options": [
+      "Vera, ma solo se g è anche derivabile",
+      "Falsa: l'estremo di integrazione 2 rende h discontinua in \\(x=2\\)",
+      "Vera: per il Teorema Fondamentale del Calcolo, h è derivabile con \\(h'=g\\), quindi in particolare continua su tutto \\(\\mathbb{R}\\)",
+      "Falsa: h è definita solo per \\(x\\ge2\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 566,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{\\ln x}{x\\left(\\frac{1}{2}+\\ln^2 x\\right)}\\,dx \\) (per \\(x>0\\)).",
+    "options": [
+      "\\(\\frac{\\ln{\\left(\\ln{\\left(x \\right)}^{2} + \\frac{1}{2} \\right)}}{2} + C\\)",
+      "\\(\\frac{\\ln{\\left(x \\right)}^{2}}{2} + C\\)",
+      "\\(- \\frac{\\ln{\\left(\\ln{\\left(x \\right)}^{2} + \\frac{1}{2} \\right)}}{2} + C\\)",
+      "\\(\\ln{\\left(\\ln{\\left(x \\right)}^{2} + \\frac{1}{2} \\right)} + C\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 567,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{\\ln x}{x\\left(1+\\ln^2 x\\right)}\\,dx \\) (per \\(x>0\\)).",
+    "options": [
+      "\\(- \\frac{\\ln{\\left(\\ln{\\left(x \\right)}^{2} + 1 \\right)}}{2} + C\\)",
+      "\\(\\frac{\\ln{\\left(x \\right)}^{2}}{2} + C\\)",
+      "\\(\\frac{\\ln{\\left(\\ln{\\left(x \\right)}^{2} + 1 \\right)}}{2} + C\\)",
+      "\\(\\ln{\\left(\\ln{\\left(x \\right)}^{2} + 1 \\right)} + C\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 568,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{\\ln x}{x\\left(4+\\ln^2 x\\right)}\\,dx \\) (per \\(x>0\\)).",
+    "options": [
+      "\\(\\frac{\\ln{\\left(x \\right)}^{2}}{2} + C\\)",
+      "\\(\\frac{\\ln{\\left(\\ln{\\left(x \\right)}^{2} + 4 \\right)}}{2} + C\\)",
+      "\\(\\ln{\\left(\\ln{\\left(x \\right)}^{2} + 4 \\right)} + C\\)",
+      "\\(- \\frac{\\ln{\\left(\\ln{\\left(x \\right)}^{2} + 4 \\right)}}{2} + C\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 569,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "L'affermazione \\(h\\in C(\\mathbb{R}) \\Rightarrow H(x):=\\int_0^x h(t)\\,dt \\in C(\\mathbb{R})\\) è:",
+    "options": [
+      "Vera, ma solo se h è anche limitata",
+      "Falsa: H potrebbe non essere definita per ogni x",
+      "Vera: per il Teorema Fondamentale del Calcolo, H è addirittura derivabile con \\(H'=h\\), quindi in particolare continua",
+      "Falsa: l'integrale di una funzione continua non è mai continuo"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 570,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int e^{x}\\sin(-2x)\\,dx \\).",
+    "options": [
+      "\\(- \\frac{\\left(- \\sin{\\left(2 x \\right)} + 2 \\cos{\\left(2 x \\right)}\\right) e^{x}}{5} + C\\)",
+      "\\(\\frac{2 \\left(- \\sin{\\left(2 x \\right)} + 2 \\cos{\\left(2 x \\right)}\\right) e^{x}}{5} + C\\)",
+      "\\(\\frac{\\left(- \\sin{\\left(2 x \\right)} + 2 \\cos{\\left(2 x \\right)}\\right) e^{x}}{5} + C\\)",
+      "\\(\\frac{\\left(2 \\sin{\\left(2 x \\right)} + \\cos{\\left(2 x \\right)}\\right) e^{x}}{5} + C\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 571,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{-2x+1}{3x+3}\\,dx \\).",
+    "options": [
+      "\\(\\frac{2 x}{3} - \\ln{\\left(x + 1 \\right)} + C\\)",
+      "\\(- \\frac{2 x}{3} + \\ln{\\left(x + 1 \\right)} + C\\)",
+      "\\(- \\frac{2 x}{3} + C\\)",
+      "\\(- \\frac{x}{3} + \\frac{\\ln{\\left(x + 1 \\right)}}{2} + C\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 572,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{e^{x}}{\\sqrt{e^{x}+1}}\\sin\\!\\left(\\sqrt{e^{x}+1}\\right)dx \\).",
+    "options": [
+      "\\(- 2 \\cos{\\left(\\sqrt{e^{x} + 1} \\right)} + C\\)",
+      "\\(- \\cos{\\left(\\sqrt{e^{x} + 1} \\right)} + C\\)",
+      "\\(2 \\sin{\\left(\\sqrt{e^{x} + 1} \\right)} + C\\)",
+      "\\(2 \\cos{\\left(\\sqrt{e^{x} + 1} \\right)} + C\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 573,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{x\\arcsin(3x^2)}{\\sqrt{1-9x^4}}\\,dx \\) (nel dominio di definizione).",
+    "options": [
+      "\\(\\frac{\\operatorname{asin}{\\left(3 x^{2} \\right)}}{6} + C\\)",
+      "\\(- \\frac{\\operatorname{asin}^{2}{\\left(3 x^{2} \\right)}}{12} + C\\)",
+      "\\(\\frac{\\operatorname{asin}^{2}{\\left(3 x^{2} \\right)}}{12} + C\\)",
+      "\\(\\frac{\\operatorname{asin}^{2}{\\left(3 x^{2} \\right)}}{2} + C\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 574,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int e^{x}\\tan(\\frac{3}{2}e^{x})\\,dx \\).",
+    "options": [
+      "\\(\\frac{2 \\ln{\\left(\\sin{\\left(\\frac{3 e^{x}}{2} \\right)} \\right)}}{3} + C\\)",
+      "\\(- \\frac{2 \\ln{\\left(\\cos{\\left(\\frac{3 e^{x}}{2} \\right)} \\right)}}{3} + C\\)",
+      "\\(- \\frac{3 \\ln{\\left(\\cos{\\left(\\frac{3 e^{x}}{2} \\right)} \\right)}}{2} + C\\)",
+      "\\(\\frac{2 \\ln{\\left(\\cos{\\left(\\frac{3 e^{x}}{2} \\right)} \\right)}}{3} + C\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 575,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int e^{x}\\tan(3e^{x})\\,dx \\).",
+    "options": [
+      "\\(- \\frac{\\ln{\\left(\\cos{\\left(3 e^{x} \\right)} \\right)}}{3} + C\\)",
+      "\\(- 3 \\ln{\\left(\\cos{\\left(3 e^{x} \\right)} \\right)} + C\\)",
+      "\\(\\frac{\\ln{\\left(\\cos{\\left(3 e^{x} \\right)} \\right)}}{3} + C\\)",
+      "\\(\\frac{\\ln{\\left(\\sin{\\left(3 e^{x} \\right)} \\right)}}{3} + C\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 576,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "L'affermazione \\(\\displaystyle\\int_{-1}^{1} e^{-|x|}\\,dx = 0\\) è:",
+    "options": [
+      "Falsa: l'integrale diverge a \\(+\\infty\\)",
+      "Vera: l'intervallo di integrazione è simmetrico rispetto a 0",
+      "Falsa: l'integrando \\(e^{-|x|}\\) è sempre strettamente positivo, quindi l'integrale è un numero positivo (vale \\(2(1-e^{-1})\\)), non zero",
+      "Vera: \\(e^{-|x|}\\) è una funzione dispari"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 577,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "L'affermazione \\\"F primitiva di f su \\\\(\\\\mathbb{R}\\\\) e \\\\(f\\\\ge0\\\\) su \\\\(\\\\mathbb{R}\\\\) \\\\(\\\\Rightarrow\\\\) F crescente\\\" è:",
+    "options": [
+      "Vera, ma solo se F è anche limitata",
+      "Falsa: F potrebbe comunque decrescere in qualche tratto",
+      "Vera: \\(F'=f\\ge0\\) ovunque implica, per il criterio di monotonia, che F è crescente (non decrescente)",
+      "Falsa: servirebbe \\(f>0\\) strettamente, non \\(f\\ge0\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 578,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{x+2}{2x+1}\\,dx \\).",
+    "options": [
+      "\\(\\frac{x}{2} + \\frac{3 \\ln{\\left(2 x + 1 \\right)}}{4} + C\\)",
+      "\\(\\frac{x}{2} + C\\)",
+      "\\(- \\frac{x}{2} - \\frac{3 \\ln{\\left(2 x + 1 \\right)}}{4} + C\\)",
+      "\\(\\frac{x}{4} + \\frac{3 \\ln{\\left(2 x + 1 \\right)}}{8} + C\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 579,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{x\\ln^3(3x^2+1)}{1+3x^2}\\,dx \\).",
+    "options": [
+      "\\(\\frac{\\ln{\\left(3 x^{2} + 1 \\right)}^{4}}{24} + C\\)",
+      "\\(\\frac{\\ln{\\left(3 x^{2} + 1 \\right)}^{4}}{6} + C\\)",
+      "\\(- \\frac{\\ln{\\left(3 x^{2} + 1 \\right)}^{4}}{24} + C\\)",
+      "\\(\\frac{\\ln{\\left(3 x^{2} + 1 \\right)}^{3}}{24} + C\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 580,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{-2x-4}{3x-6}\\,dx \\).",
+    "options": [
+      "\\(- \\frac{2 x}{3} - \\frac{8 \\ln{\\left(x - 2 \\right)}}{3} + C\\)",
+      "\\(- \\frac{2 x}{3} + C\\)",
+      "\\(- \\frac{x}{3} - \\frac{4 \\ln{\\left(x - 2 \\right)}}{3} + C\\)",
+      "\\(\\frac{2 x}{3} + \\frac{8 \\ln{\\left(x - 2 \\right)}}{3} + C\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 581,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{x\\ln^3(2x^2+1)}{1+2x^2}\\,dx \\).",
+    "options": [
+      "\\(- \\frac{\\ln{\\left(2 x^{2} + 1 \\right)}^{4}}{16} + C\\)",
+      "\\(\\frac{\\ln{\\left(2 x^{2} + 1 \\right)}^{3}}{16} + C\\)",
+      "\\(\\frac{\\ln{\\left(2 x^{2} + 1 \\right)}^{4}}{4} + C\\)",
+      "\\(\\frac{\\ln{\\left(2 x^{2} + 1 \\right)}^{4}}{16} + C\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 582,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "L'affermazione \\(\\displaystyle\\int_{-10}^{10} 3^{10|x|}\\,dx = 0\\) è:",
+    "options": [
+      "Falsa: l'integrale vale esattamente 0 solo nel punto \\(x=0\\)",
+      "Vera: l'intervallo di integrazione è simmetrico rispetto a 0",
+      "Falsa: l'integrando \\(3^{10|x|}\\) è sempre strettamente positivo, quindi l'integrale è un numero positivo, non zero",
+      "Vera: \\(3^{10|x|}\\) è una funzione dispari"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 583,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{x\\arcsin(x^2)}{\\sqrt{1-x^4}}\\,dx \\) (nel dominio di definizione).",
+    "options": [
+      "\\(\\frac{\\operatorname{asin}^{2}{\\left(x^{2} \\right)}}{2} + C\\)",
+      "\\(\\frac{\\operatorname{asin}{\\left(x^{2} \\right)}}{2} + C\\)",
+      "\\(- \\frac{\\operatorname{asin}^{2}{\\left(x^{2} \\right)}}{4} + C\\)",
+      "\\(\\frac{\\operatorname{asin}^{2}{\\left(x^{2} \\right)}}{4} + C\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 584,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int e^{2x}\\sin(-2x)\\,dx \\).",
+    "options": [
+      "\\(\\frac{\\sqrt{2} e^{2 x} \\cos{\\left(2 x + \\frac{\\pi}{4} \\right)}}{2} + C\\)",
+      "\\(\\frac{\\sqrt{2} e^{2 x} \\cos{\\left(2 x + \\frac{\\pi}{4} \\right)}}{4} + C\\)",
+      "\\(- \\frac{\\sqrt{2} e^{2 x} \\cos{\\left(2 x + \\frac{\\pi}{4} \\right)}}{4} + C\\)",
+      "\\(\\frac{\\sqrt{2} e^{2 x} \\sin{\\left(2 x + \\frac{\\pi}{4} \\right)}}{4} + C\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 585,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "L'affermazione \\(\\displaystyle\\int_{-e}^{e} x^8\\,\\pi^{x^6}\\cos x\\,dx = 0\\) è:",
+    "options": [
+      "Falsa: l'integrale è zero solo perché il dominio è simmetrico, indipendentemente dalla parità",
+      "Vera: ogni integrale su un intervallo simmetrico rispetto a 0 vale zero",
+      "Falsa: l'integrando \\(x^8\\pi^{x^6}\\cos x\\) è una funzione PARI (prodotto di funzioni pari), quindi l'integrale su un intervallo simmetrico NON è in generale zero (lo sarebbe solo per funzioni dispari)",
+      "Vera: l'integrando è una funzione dispari"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 586,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{e^{x}}{\\sqrt{e^{x}+\\frac{1}{2}}}\\sin\\!\\left(\\sqrt{e^{x}+\\frac{1}{2}}\\right)dx \\).",
+    "options": [
+      "\\(- 2 \\cos{\\left(\\sqrt{e^{x} + \\frac{1}{2}} \\right)} + C\\)",
+      "\\(2 \\sin{\\left(\\sqrt{e^{x} + \\frac{1}{2}} \\right)} + C\\)",
+      "\\(2 \\cos{\\left(\\sqrt{e^{x} + \\frac{1}{2}} \\right)} + C\\)",
+      "\\(- \\cos{\\left(\\sqrt{e^{x} + \\frac{1}{2}} \\right)} + C\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 587,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{\\ln x}{x\\left(2+\\ln^2 x\\right)}\\,dx \\) (per \\(x>0\\)).",
+    "options": [
+      "\\(- \\frac{\\ln{\\left(\\ln{\\left(x \\right)}^{2} + 2 \\right)}}{2} + C\\)",
+      "\\(\\frac{\\ln{\\left(\\ln{\\left(x \\right)}^{2} + 2 \\right)}}{2} + C\\)",
+      "\\(\\frac{\\ln{\\left(x \\right)}^{2}}{2} + C\\)",
+      "\\(\\ln{\\left(\\ln{\\left(x \\right)}^{2} + 2 \\right)} + C\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 588,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "L'affermazione \\(f(x)=\\sin^4 x\\cdot 2^{x^3+x^8}+\\log_4(x^2+1)\\) non ammette primitive è:",
+    "options": [
+      "Falsa: solo le funzioni polinomiali ammettono primitive",
+      "Vera: la funzione è troppo complicata per avere una primitiva elementare",
+      "Falsa: f è definita e continua su tutto \\(\\mathbb{R}\\) (nessun problema di dominio), quindi per il Teorema Fondamentale del Calcolo ammette sempre una primitiva",
+      "Vera: \\(\\log_4(x^2+1)\\) non è definito per \\(x=0\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 589,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int e^{2x}\\sin(3x)\\,dx \\).",
+    "options": [
+      "\\(- \\frac{\\left(2 \\sin{\\left(3 x \\right)} - 3 \\cos{\\left(3 x \\right)}\\right) e^{2 x}}{13} + C\\)",
+      "\\(\\frac{2 \\left(2 \\sin{\\left(3 x \\right)} - 3 \\cos{\\left(3 x \\right)}\\right) e^{2 x}}{13} + C\\)",
+      "\\(\\frac{\\left(3 \\sin{\\left(3 x \\right)} + 2 \\cos{\\left(3 x \\right)}\\right) e^{2 x}}{13} + C\\)",
+      "\\(\\frac{\\left(2 \\sin{\\left(3 x \\right)} - 3 \\cos{\\left(3 x \\right)}\\right) e^{2 x}}{13} + C\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 590,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{x\\arcsin(2x^2)}{\\sqrt{1-4x^4}}\\,dx \\) (nel dominio di definizione).",
+    "options": [
+      "\\(\\frac{\\operatorname{asin}^{2}{\\left(2 x^{2} \\right)}}{2} + C\\)",
+      "\\(- \\frac{\\operatorname{asin}^{2}{\\left(2 x^{2} \\right)}}{8} + C\\)",
+      "\\(\\frac{\\operatorname{asin}{\\left(2 x^{2} \\right)}}{4} + C\\)",
+      "\\(\\frac{\\operatorname{asin}^{2}{\\left(2 x^{2} \\right)}}{8} + C\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 591,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Sia \\(F(x)=\\int_0^x 2(t^2+1)^4\\,dt\\). L'affermazione \\\"F è strettamente crescente su \\\\(\\\\mathbb{R}\\\\)\\\" è:",
+    "options": [
+      "Vera, ma solo perché l'integrando è un polinomio, non per il segno della derivata",
+      "Falsa: F non è derivabile ovunque",
+      "Vera: F'(x) = \\(2(x^2+1)^4>0\\) per ogni x, quindi F è strettamente crescente per il criterio di monotonia",
+      "Falsa: F'(x) può annullarsi e cambiare segno"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 592,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int e^{-x}\\sin(2x)\\,dx \\).",
+    "options": [
+      "\\(- \\frac{\\left(\\sin{\\left(2 x \\right)} + 2 \\cos{\\left(2 x \\right)}\\right) e^{- x}}{5} + C\\)",
+      "\\(\\frac{\\left(2 \\sin{\\left(2 x \\right)} - \\cos{\\left(2 x \\right)}\\right) e^{- x}}{5} + C\\)",
+      "\\(- \\frac{2 \\left(\\sin{\\left(2 x \\right)} + 2 \\cos{\\left(2 x \\right)}\\right) e^{- x}}{5} + C\\)",
+      "\\(\\frac{\\left(\\sin{\\left(2 x \\right)} + 2 \\cos{\\left(2 x \\right)}\\right) e^{- x}}{5} + C\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 593,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int e^{x}\\tan(2e^{x})\\,dx \\).",
+    "options": [
+      "\\(- 2 \\ln{\\left(\\cos{\\left(2 e^{x} \\right)} \\right)} + C\\)",
+      "\\(\\frac{\\ln{\\left(\\cos{\\left(2 e^{x} \\right)} \\right)}}{2} + C\\)",
+      "\\(- \\frac{\\ln{\\left(\\cos{\\left(2 e^{x} \\right)} \\right)}}{2} + C\\)",
+      "\\(\\frac{\\ln{\\left(\\sin{\\left(2 e^{x} \\right)} \\right)}}{2} + C\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 594,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "L\\'affermazione \"tutte le funzioni derivabili sono dotate di primitive\" è:",
+    "options": [
+      "Vera, ma solo se f è anche limitata",
+      "Falsa: derivabilità e integrabilità sono proprietà indipendenti",
+      "Vera: f derivabile \\(\\Rightarrow\\) f continua \\(\\Rightarrow\\) (per il Teorema Fondamentale del Calcolo) f ammette una primitiva",
+      "Falsa: solo le funzioni polinomiali derivabili hanno primitive"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 595,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{e^{x}}{\\sqrt{e^{x}+3}}\\sin\\!\\left(\\sqrt{e^{x}+3}\\right)dx \\).",
+    "options": [
+      "\\(2 \\sin{\\left(\\sqrt{e^{x} + 3} \\right)} + C\\)",
+      "\\(- 2 \\cos{\\left(\\sqrt{e^{x} + 3} \\right)} + C\\)",
+      "\\(- \\cos{\\left(\\sqrt{e^{x} + 3} \\right)} + C\\)",
+      "\\(2 \\cos{\\left(\\sqrt{e^{x} + 3} \\right)} + C\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 596,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int e^{x}\\sin(2x)\\,dx \\).",
+    "options": [
+      "\\(\\frac{2 \\left(\\sin{\\left(2 x \\right)} - 2 \\cos{\\left(2 x \\right)}\\right) e^{x}}{5} + C\\)",
+      "\\(\\frac{\\left(\\sin{\\left(2 x \\right)} - 2 \\cos{\\left(2 x \\right)}\\right) e^{x}}{5} + C\\)",
+      "\\(- \\frac{\\left(\\sin{\\left(2 x \\right)} - 2 \\cos{\\left(2 x \\right)}\\right) e^{x}}{5} + C\\)",
+      "\\(\\frac{\\left(2 \\sin{\\left(2 x \\right)} + \\cos{\\left(2 x \\right)}\\right) e^{x}}{5} + C\\)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 597,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int e^{x}\\tan(\\frac{1}{2}e^{x})\\,dx \\).",
+    "options": [
+      "\\(- 2 \\ln{\\left(\\cos{\\left(\\frac{e^{x}}{2} \\right)} \\right)} + C\\)",
+      "\\(2 \\ln{\\left(\\sin{\\left(\\frac{e^{x}}{2} \\right)} \\right)} + C\\)",
+      "\\(- \\frac{\\ln{\\left(\\cos{\\left(\\frac{e^{x}}{2} \\right)} \\right)}}{2} + C\\)",
+      "\\(2 \\ln{\\left(\\cos{\\left(\\frac{e^{x}}{2} \\right)} \\right)} + C\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 598,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{x\\ln^3(6x^2+1)}{2+12x^2}\\,dx \\).",
+    "options": [
+      "\\(- \\frac{\\ln{\\left(6 x^{2} + 1 \\right)}^{4}}{96} + C\\)",
+      "\\(\\frac{\\ln{\\left(6 x^{2} + 1 \\right)}^{4}}{24} + C\\)",
+      "\\(\\frac{\\ln{\\left(6 x^{2} + 1 \\right)}^{3}}{96} + C\\)",
+      "\\(\\frac{\\ln{\\left(6 x^{2} + 1 \\right)}^{4}}{96} + C\\)"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 599,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{e^{x}}{\\sqrt{e^{x}+4}}\\sin\\!\\left(\\sqrt{e^{x}+4}\\right)dx \\).",
+    "options": [
+      "\\(- \\cos{\\left(\\sqrt{e^{x} + 4} \\right)} + C\\)",
+      "\\(2 \\sin{\\left(\\sqrt{e^{x} + 4} \\right)} + C\\)",
+      "\\(- 2 \\cos{\\left(\\sqrt{e^{x} + 4} \\right)} + C\\)",
+      "\\(2 \\cos{\\left(\\sqrt{e^{x} + 4} \\right)} + C\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 600,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{x\\ln^3(2x^2+1)}{3+6x^2}\\,dx \\).",
+    "options": [
+      "\\(\\frac{\\ln{\\left(2 x^{2} + 1 \\right)}^{3}}{48} + C\\)",
+      "\\(\\frac{\\ln{\\left(2 x^{2} + 1 \\right)}^{4}}{12} + C\\)",
+      "\\(\\frac{\\ln{\\left(2 x^{2} + 1 \\right)}^{4}}{48} + C\\)",
+      "\\(- \\frac{\\ln{\\left(2 x^{2} + 1 \\right)}^{4}}{48} + C\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 601,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{x-4}{2x-2}\\,dx \\).",
+    "options": [
+      "\\(\\frac{x}{2} - \\frac{3 \\ln{\\left(x - 1 \\right)}}{2} + C\\)",
+      "\\(\\frac{x}{4} - \\frac{3 \\ln{\\left(x - 1 \\right)}}{4} + C\\)",
+      "\\(- \\frac{x}{2} + \\frac{3 \\ln{\\left(x - 1 \\right)}}{2} + C\\)",
+      "\\(\\frac{x}{2} + C\\)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 602,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "L'affermazione \\(F,G\\) primitive di f in \\((a,b) \\Rightarrow \\exists c\\in\\mathbb{R}: F(x)+G(x)=c\\ \\forall x\\in(a,b)\\) è:",
+    "options": [
+      "Falsa: non esiste alcuna relazione tra due primitive della stessa funzione",
+      "Vera: è la caratterizzazione standard delle primitive",
+      "Falsa: due primitive della stessa funzione differiscono per una costante (\\(F(x)-G(x)=c\\)), non è la loro SOMMA a essere costante",
+      "Vera, se f è anche continua"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 603,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Calcolare l'integrale \\( \\displaystyle\\int \\frac{3x+4}{-x-3}\\,dx \\).",
+    "options": [
+      "\\(- \\frac{3 x}{2} + \\frac{5 \\ln{\\left(x + 3 \\right)}}{2} + C\\)",
+      "\\(- 3 x + C\\)",
+      "\\(- 3 x + 5 \\ln{\\left(x + 3 \\right)} + C\\)",
+      "\\(3 x - 5 \\ln{\\left(x + 3 \\right)} + C\\)"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 604,
+    "chapter": 7,
+    "topic": "Calcolo integrale",
+    "text": "Sia \\(k\\in C(\\mathbb{R})\\) dispari. L'affermazione \\(\\displaystyle\\int_{-1}^{2}k(t)\\,dt = \\int_1^2 k(t)\\,dt\\) è:",
+    "options": [
+      "Vera, ma solo se k è anche limitata",
+      "Falsa: per una funzione dispari l'integrale su ogni intervallo simmetrico è diverso da zero",
+      "Vera: per k dispari \\(\\int_{-1}^1 k=0\\) per simmetria, quindi \\(\\int_{-1}^2 k = \\int_{-1}^1 k+\\int_1^2 k = \\int_1^2 k\\)",
+      "Falsa: l'uguaglianza vale solo se k è pari, non dispari"
+    ],
+    "correct": 2
   }
 ]
