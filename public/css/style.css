@@ -1,0 +1,332 @@
+/* ---------------------------------------------------------------
+   Stile minimale, ispirato alle presentazioni Keynote:
+   molto spazio bianco, tipografia di sistema, accenti sobri,
+   ombre leggerissime, nessun ornamento superfluo.
+   --------------------------------------------------------------- */
+
+:root {
+  --ink: #1d1d1f;
+  --ink-soft: #6e6e73;
+  --ink-faint: #a1a1a6;
+  --hairline: rgba(0, 0, 0, 0.08);
+  --surface: #ffffff;
+  --bg: #fbfbfd;
+  --accent: #0071e3;
+  --accent-soft: #eaf2fe;
+  --good: #1d7a46;
+  --good-soft: #e6f6ec;
+  --warn: #a86400;
+  --warn-soft: #fdf1de;
+  --bad: #c0392b;
+  --radius: 18px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-font-smoothing: antialiased; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 8px 24px 96px;
+}
+
+.wrap.wide { max-width: 1080px; }
+
+header.top {
+  padding: 72px 24px 40px;
+  text-align: center;
+}
+
+header.top h1 {
+  margin: 0;
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+header.top p {
+  margin: 10px 0 0;
+  font-size: 1.02rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 40px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 12px 32px rgba(0,0,0,0.05);
+  margin-top: 28px;
+}
+
+h2 {
+  margin: 0 0 6px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 22px 0 8px;
+}
+
+input[type=text], input[type=password], input[type=number] {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--hairline);
+  background: var(--bg);
+  border-radius: 12px;
+  font-size: 1rem;
+  color: var(--ink);
+  font-family: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 980px;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  background: var(--accent);
+  color: white;
+  margin-top: 20px;
+  margin-right: 10px;
+  transition: transform 0.1s ease, opacity 0.15s ease, background 0.15s ease;
+  letter-spacing: -0.005em;
+}
+
+button:hover { opacity: 0.88; }
+button:active { transform: scale(0.98); }
+
+button.secondary {
+  background: var(--bg);
+  color: var(--accent);
+  border: 1px solid var(--hairline);
+}
+
+button.danger { background: var(--bad); }
+button:disabled { opacity: 0.35; cursor: not-allowed; }
+
+.error {
+  color: var(--bad);
+  font-size: 0.88rem;
+  margin-top: 14px;
+}
+
+.muted { color: var(--ink-soft); font-size: 0.9rem; }
+
+.waiting-box {
+  text-align: center;
+  padding: 56px 10px;
+}
+
+.spinner {
+  width: 30px; height: 30px;
+  border: 3px solid var(--hairline);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  margin: 0 auto 24px;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.progress-bar {
+  height: 4px;
+  background: var(--hairline);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 14px 0 6px;
+}
+.progress-bar > div {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+
+.q-topic {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 5px 12px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.q-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.55;
+  margin: 4px 0 22px;
+  letter-spacing: -0.005em;
+}
+
+.q-image {
+  max-width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--hairline);
+  margin-bottom: 24px;
+  display: block;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 16px;
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+.option:hover { background: var(--bg); border-color: #d2d2d7; }
+.option.selected {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.option.correct-opt {
+  border-color: var(--good);
+  background: var(--good-soft);
+}
+.option.wrong-opt {
+  border-color: var(--bad);
+  background: #fdeceb;
+}
+.option { justify-content: space-between; }
+.option input { margin: 0; accent-color: var(--accent); width: 17px; height: 17px; flex: none; }
+.option span { font-size: 1rem; }
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  gap: 10px;
+}
+.nav-row button { margin-top: 0; }
+
+.q-counter { text-align: center; font-size: 0.82rem; color: var(--ink-faint); margin-bottom: 2px; letter-spacing: 0.01em; }
+
+.grid-nums {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 6px;
+  margin: 28px 0 0;
+}
+.grid-nums button {
+  margin: 0; padding: 8px 0; font-size: 0.78rem; font-weight: 600;
+  background: var(--bg); color: var(--ink-soft); border: 1px solid var(--hairline);
+  border-radius: 8px;
+}
+.grid-nums button.answered { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.grid-nums button.current { background: var(--ink); border-color: var(--ink); color: white; }
+
+.score-box {
+  text-align: center;
+  padding: 40px 10px 16px;
+}
+.score-voto {
+  font-size: 4.2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin: 18px 0 6px;
+}
+.score-detail { color: var(--ink-soft); margin-top: 8px; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+th, td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--hairline);
+}
+th {
+  color: var(--ink-faint);
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+.badge.waiting { background: var(--warn-soft); color: var(--warn); }
+.badge.in_progress { background: var(--accent-soft); color: var(--accent); }
+.badge.completed { background: var(--good-soft); color: var(--good); }
+.badge.not_registered { background: #f2f2f4; color: var(--ink-faint); }
+
+.stats-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.stat {
+  flex: 1;
+  min-width: 120px;
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 20px 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.04);
+  text-align: center;
+}
+.stat .num { font-size: 1.9rem; font-weight: 700; color: var(--ink); letter-spacing: -0.02em; }
+.stat .lab { font-size: 0.76rem; color: var(--ink-soft); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.03em; }
+
+.codes-box {
+  max-height: 220px;
+  overflow-y: auto;
+  background: var(--bg);
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  padding: 14px;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.92rem;
+  line-height: 2;
+  margin-top: 10px;
+}
+.top-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+
+/* Font matematico: KaTeX usa già i suoi font dedicati (stile Computer
+   Modern, lo stesso dei libri di testo); qui armonizziamo solo la
+   dimensione con il resto del testo. */
+.katex { font-size: 1.05em; }

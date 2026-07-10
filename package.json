@@ -1,0 +1,13 @@
+{
+  "name": "quiz-analisi-matematica",
+  "version": "1.0.0",
+  "description": "Web app per esercitazione quiz di Analisi Matematica I",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18"
+  }
+}
