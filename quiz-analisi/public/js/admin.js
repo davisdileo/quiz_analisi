@@ -182,13 +182,19 @@ function renderState(data) {
         <td><span class="badge ${s.status}">${statusLabel(s.status)}</span></td>
         <td>${s.answered}/${s.total || data.totalQuestions}</td>
         <td>${s.voto !== null && s.voto !== undefined ? (s.lode ? "30 e lode" : s.voto + "/30") : "—"}</td>
-        <td><button class="secondary" style="margin:0;padding:6px 12px;font-size:0.82rem;" data-code="${s.code}">Vedi quiz</button></td>
+        <td>
+          <button class="secondary" style="margin:0;padding:6px 12px;font-size:0.82rem;" data-view="${s.code}">Vedi quiz</button>
+          <button class="secondary" style="margin:0 0 0 6px;padding:6px 12px;font-size:0.82rem;" data-download="${s.code}">Scarica</button>
+        </td>
       </tr>
     `
       )
       .join("");
-    tbody.querySelectorAll("button[data-code]").forEach((btn) => {
-      btn.onclick = () => renderReview(btn.dataset.code);
+    tbody.querySelectorAll("button[data-view]").forEach((btn) => {
+      btn.onclick = () => renderReview(btn.dataset.view);
+    });
+    tbody.querySelectorAll("button[data-download]").forEach((btn) => {
+      btn.onclick = () => downloadStudentReview(btn.dataset.download);
     });
   }
 }
@@ -210,6 +216,111 @@ function optionLabel(q, i) {
     tag = " &nbsp;<span class='badge completed'>risposta corretta</span>";
   }
   return `<div class="${cls}"><span>${q.options[i]}</span>${tag}</div>`;
+}
+
+function slugify(s) {
+  return (s || "")
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-zA-Z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .toLowerCase();
+}
+
+function escapeHtml(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  }[c]));
+}
+
+function buildReviewHtml(data) {
+  const scoreLine =
+    data.voto !== null && data.voto !== undefined
+      ? `${data.lode ? "30 e lode" : data.voto + "/30"} &middot; ${data.correctCount}/${data.total} corrette`
+      : "Quiz non ancora completato";
+
+  const questionsHtml = data.questions
+    .map((q, i) => {
+      const optionsHtml = q.options
+        .map((opt, oi) => {
+          const isCorrectOpt = oi === q.correctIndex;
+          const isStudentOpt = oi === q.studentIndex;
+          let cls = "option";
+          let tag = "";
+          if (isCorrectOpt) { cls += " correct-opt"; tag = " — corretta"; }
+          if (isStudentOpt && !isCorrectOpt) { cls += " wrong-opt"; tag = " — risposta data"; }
+          if (isStudentOpt && isCorrectOpt) { tag = " — risposta corretta"; }
+          return `<div class="${cls}">${escapeHtml(opt)}${tag}</div>`;
+        })
+        .join("");
+      return `
+    <div class="qcard">
+      <div class="q-topic">${escapeHtml(q.topic)}</div>
+      <div class="q-counter">Domanda ${i + 1} di ${data.questions.length}${q.answered ? "" : " — non risposto"}</div>
+      <div class="q-text">${escapeHtml(q.text)}</div>
+      ${optionsHtml}
+    </div>`;
+    })
+    .join("");
+
+  return `<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<title>Quiz ${escapeHtml(data.code)} — ${escapeHtml(data.name || "")}</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.10/katex.min.css" />
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; color: #1d1d1f; background: #fbfbfd; }
+  h1 { font-size: 1.5rem; margin-bottom: 4px; }
+  .muted { color: #6e6e73; }
+  .score { font-size: 1.3rem; font-weight: 700; margin: 10px 0 24px; }
+  .qcard { background: #fff; border-radius: 14px; padding: 22px 24px; margin-bottom: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.04); }
+  .q-topic { display: inline-block; background: #eaf2fe; color: #0071e3; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 4px 10px; border-radius: 999px; margin-bottom: 10px; }
+  .q-counter { font-size: 0.78rem; color: #a1a1a6; margin-bottom: 6px; }
+  .q-text { font-size: 1.05rem; margin: 4px 0 14px; }
+  .option { padding: 10px 12px; border: 1px solid #e5e5e7; border-radius: 10px; margin-bottom: 8px; font-size: 0.95rem; }
+  .option.correct-opt { border-color: #1d7a46; background: #e6f6ec; }
+  .option.wrong-opt { border-color: #c0392b; background: #fdeceb; }
+  .footer-note { color: #a1a1a6; font-size: 0.78rem; margin-top: 30px; text-align: center; }
+</style>
+</head>
+<body>
+  <h1>${escapeHtml(data.name || "Studente")} <span class="muted">(${escapeHtml(data.code)})</span></h1>
+  <p class="muted">Esportato il ${new Date().toLocaleString("it-IT")}</p>
+  <div class="score">${scoreLine}</div>
+  ${questionsHtml}
+  <p class="footer-note">Quiz di Analisi Matematica I — copia scaricata dal pannello docente.</p>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.10/katex.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.10/contrib/auto-render.min.js"></script>
+  <script>
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "\\\\[", right: "\\\\]", display: true },
+        { left: "\\\\(", right: "\\\\)", display: false },
+      ],
+      throwOnError: false,
+    });
+  </script>
+</body>
+</html>`;
+}
+
+async function downloadStudentReview(code) {
+  const res = await api("/api/admin/student-review?code=" + encodeURIComponent(code));
+  if (res.status === 401) return renderLogin();
+  const data = await res.json();
+  if (!res.ok) {
+    alert(data.error || "Errore nel recupero del quiz.");
+    return;
+  }
+  const html = buildReviewHtml(data);
+  const blob = new Blob([html], { type: "text/html" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `quiz-${data.code}${data.name ? "-" + slugify(data.name) : ""}.html`;
+  a.click();
+  URL.revokeObjectURL(url);
 }
 
 async function renderReview(code) {
@@ -245,6 +356,7 @@ async function renderReview(code) {
   app.innerHTML = `
     <div class="card">
       <button class="secondary" id="backBtn">&larr; Torna alla dashboard</button>
+      <button class="secondary" id="downloadReviewBtn">Scarica questo quiz (.html)</button>
       <h2 style="margin-top:16px;">${data.name || "Studente"} <span class="muted">(${data.code})</span></h2>
       <p class="muted">${scoreLine}</p>
     </div>
@@ -254,6 +366,7 @@ async function renderReview(code) {
     renderDashboard();
     startPolling();
   };
+  document.getElementById("downloadReviewBtn").onclick = () => downloadStudentReview(code);
   renderMath();
 }
 

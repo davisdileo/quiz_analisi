@@ -44,15 +44,28 @@ Il server parte sulla porta 3000 (o quella indicata da `PORT`).
    rivedere tutte le domande assegnate a quello studente, con la sua
    risposta e quella corretta evidenziate (funziona anche prima che lo
    studente abbia iniziato, per controllare in anteprima il suo quiz).
+   Cliccando invece "Scarica" (in tabella o nella pagina di revisione)
+   scarichi un file `.html` autonomo con l'intero quiz di quello studente
+   (domande, risposte date, risposte corrette, voto): apribile con un
+   doppio clic anche offline, senza bisogno del server. È il modo
+   consigliato per conservare una copia di un quiz che vuoi rivedere con
+   calma, specialmente se usi il piano gratuito di Render (vedi sotto) e
+   temi che lo stato online possa andare perso prima di riguardarlo.
 5. Ogni studente, al termine, vede il numero di risposte corrette e il voto
    in trentesimi (fino a "30 e lode" se risponde correttamente a tutte le
-   40 domande).
+   40 domande), e un pulsante "Termina sessione" che lo riporta alla
+   schermata di accesso (utile se più persone usano lo stesso dispositivo).
 6. "Termina quiz" blocca l'invio di nuove risposte per tutti; "Reset
    completo" cancella codici, risposte e punteggi per iniziare una nuova
-   sessione.
+   sessione. Il pannello "Andamento in tempo reale" mostra sempre TUTTI i
+   codici generati, inclusi quelli creati o completati molto tempo prima
+   (non c'è alcun filtro per data/orario).
 
 Lo stato (codici, quiz assegnati, risposte, punteggi) viene salvato su
-disco in `data/state.json`, quindi sopravvive a un riavvio del server.
+disco in `data/state.json`, quindi sopravvive a un normale riavvio del
+processo Node in locale. **Attenzione se usi il piano gratuito di
+Render**: leggi la sezione "Perdita dei codici su Render (piano free)" più
+sotto, è la causa più comune di "codici spariti senza motivo".
 
 ## Le domande e il quiz personalizzato
 
@@ -193,3 +206,36 @@ né database esterni. Due opzioni gratuite e rapide:
 In entrambi i casi l'URL da dare agli studenti è quello pubblico (senza
 `/admin.html`); tu userai `<stesso-url>/admin.html` per il pannello di
 controllo.
+
+## Perdita dei codici su Render (piano free)
+
+Se generi dei codici e, senza aver toccato nulla, dopo un po' risultano
+"non validi" ed è sparita anche la loro riga nel pannello docente, la
+causa quasi sicuramente non è un bug dell'app ma il **piano gratuito di
+Render**: il disco dei Web Service free è "effimero" — non è garantito che
+sopravviva quando il servizio si riaddormenta dopo 15 minuti di
+inattività e riparte alla richiesta successiva. In quel momento il
+processo Node riparte da zero e `data/state.json` torna a essere quello
+che avevi caricato su GitHub (di solito vuoto), cancellando codici,
+risposte e punteggi generati nel frattempo. Non è legato a un orario
+preciso: succede al primo riavvio dopo ~15 minuti senza richieste.
+
+Tre modi per evitarlo:
+
+1. **Genera i codici a ridosso dell'esercitazione** e tieni tu stesso una
+   scheda del browser aperta sull'app (ogni richiesta resetta il timer di
+   inattività), così il servizio non si addormenta durante la sessione.
+2. **Tieni il servizio sveglio con un ping esterno**: un sito gratuito
+   come cron-job.org o UptimeRobot può richiamare l'URL della tua app
+   ogni 10 minuti per tutta la durata dell'esercitazione, evitando che si
+   addormenti (attenzione: questo NON protegge da un nuovo deploy, che
+   comunque azzera lo stato).
+3. **Soluzione definitiva**: passa a un piano Render a pagamento (es.
+   "Starter") e aggiungi un "Persistent Disk" montato sulla cartella
+   `data/` del servizio — a quel punto lo stato sopravvive sia ai riavvii
+   sia ai nuovi deploy.
+
+In ogni caso, un nuovo deploy (ogni volta che fai push su GitHub) azzera
+sempre lo stato salvato, a prescindere dal piano: è normale, e infatti
+conviene generare i codici definitivi solo dopo aver caricato tutte le
+modifiche che ti servono.

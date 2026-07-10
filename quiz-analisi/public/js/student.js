@@ -206,8 +206,20 @@ function renderScore(data) {
       <p class="muted">Risposte corrette: ${data.correctCount} su ${data.total}</p>
       <div class="score-voto">${data.lode ? "30 e lode" : data.voto + "/30"}</div>
       <p class="score-detail">Il docente ha ricevuto il tuo risultato.</p>
+      <button id="endSessionBtn" class="secondary">Termina sessione</button>
     </div>
   `;
+  document.getElementById("endSessionBtn").onclick = endSession;
+}
+
+function endSession() {
+  clearInterval(waitingPollTimer);
+  localStorage.removeItem("quizSession");
+  session = null;
+  questions = [];
+  answers = {};
+  currentIndex = 0;
+  renderLogin();
 }
 
 async function pollStatus() {
